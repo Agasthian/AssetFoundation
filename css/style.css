@@ -1,0 +1,173 @@
+/*! main.css v1.0.1 | MIT License | github.com/agasthian/style.css */
+/* Document
+   ========================================================================== */
+/*
+0-600px       :   Phone
+600-900px     :   Tablet Portrait
+900-1200px    :   Tablet Landscape
+[1200-1800] is the normal styles
+1800+         :   Big Desktops
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 48em) {
+    html {
+      font-size: 36%; } }
+  @media (max-width: 26.62em) {
+    html {
+      font-size: 40%; } }
+  @media (max-width: 23.5em) {
+    html {
+      font-size: 38%; } }
+  @media (max-width: 20em) {
+    html {
+      font-size: 35%; } }
+  @media (min-width: 26.68em) {
+    html {
+      font-size: 43%; } }
+  @media (min-width: 64em) {
+    html {
+      font-size: 47%; } }
+  @media (min-width: 85.37em) {
+    html {
+      font-size: 62.5%; } }
+  @media (min-width: 90em) {
+    html {
+      font-size: 66%; } }
+  @media (min-width: 120em) {
+    html {
+      font-size: 87.9%; } }
+  @media (min-width: 160em) {
+    html {
+      font-size: 118.7%; } }
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box; }
+
+p {
+  font-size: 1.8rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: 'Playfair Display', serif; }
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold; }
+
+.btn, .btn:link, .btn:visited {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-radius: 10rem;
+  position: relative;
+  border: none;
+  cursor: pointer; }
+  @media (max-width: 26.62em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 2.2rem;
+      color: #000;
+      letter-spacing: 2px;
+      font-weight: bold; } }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  color: #333;
+  background-color: #fff; }
+  .btn--white::after {
+    background-color: #fff; }
+
+.btn--gold {
+  color: #fff;
+  background-color: #ad974f; }
+  .btn--gold::after {
+    background-color: #ad974f; }
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s; }
+
+.btn--animated {
+  animation: moveInBottom 1s ease-out 0.75s;
+  animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  color: #ad974f;
+  border-bottom: 1px solid #ad974f;
+  display: inline-block;
+  text-decoration: none;
+  padding: 3px;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  background-color: #ad974f;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0); }
+
+/*Container*/
+.container {
+  max-width: 124rem;
+  padding: 0px 4rem;
+  margin: 0px auto;
+  width: 100%; }
+
+.sectionwrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center; }
+  @media (max-width: 26.62em) {
+    .sectionwrapper {
+      min-height: 45vh; } }

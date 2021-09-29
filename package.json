@@ -1,0 +1,16 @@
+{
+  "name": "ASSETFoundation",
+  "version": "2.0.1",
+  "description": "A Educational NGO Website for Trust from Chennai.",
+  "keywords": "",
+  "license": "",
+  "author": "Agasthian",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
