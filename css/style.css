@@ -60,7 +60,25 @@ body {
   line-height: 1.7;
   box-sizing: border-box; }
 
-p {
+  #maintenance{
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+  #maintenance h1{
+    font-family: Montserrat;
+    margin: 0;
+  }
+  #maintenance h3{
+    font-size: 1.8rem;
+  }
+
+  #maintenance img{
+    height: 50%;
+  }
+  p {
   font-size: 1.8rem; }
 
 h1,
