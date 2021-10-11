@@ -16,7 +16,5 @@
   -webkit-box-align: center;
   align-items: center;
 
-  @include respond(small) {
-    min-height: 45vh;
-  }
+
 }

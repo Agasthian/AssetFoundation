@@ -19,7 +19,7 @@ $breakpoint argument choices:
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -55,13 +55,11 @@ html {
       font-size: 118.7%; } }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box; }
-
-p {
-  font-size: 1.8rem; }
 
 h1,
 h2,
@@ -75,6 +73,9 @@ nav {
 h1 {
   font-size: 4rem;
   font-weight: bold; }
+
+p {
+  font-size: 1.8rem; }
 
 .btn, .btn:link, .btn:visited {
   font-size: 1.2rem;
@@ -114,9 +115,9 @@ h1 {
 
 .btn--gold {
   color: #fff;
-  background-color: #ad974f; }
+  background-color: #862633; }
   .btn--gold::after {
-    background-color: #ad974f; }
+    background-color: #862633; }
 
 .btn::after {
   content: '';
@@ -135,15 +136,15 @@ h1 {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  color: #ad974f;
-  border-bottom: 1px solid #ad974f;
+  color: #862633;
+  border-bottom: 1px solid #862633;
   display: inline-block;
   text-decoration: none;
   padding: 3px;
   transition: all 0.2s; }
 
 .btn-text:hover {
-  background-color: #ad974f;
+  background-color: #862633;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-2px); }
@@ -152,6 +153,46 @@ h1 {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(0); }
 
+.header {
+  background-color: #862633;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 15vh;
+  background-color: #862633;
+  font-weight: 500;
+  border-bottom: 5px solid #e8ce16;
+  -webkit-box-shadow: 0 0 20px 0 black;
+  box-shadow: 0 0 20px 0 black; }
+  .header .logo {
+    width: 14%;
+    position: absolute;
+    left: 6%;
+    top: 1%; }
+  .header ul.main-nav {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    margin-top: 1%;
+    padding-left: 12%;
+    font-family: Montserrat; }
+    .header ul.main-nav li {
+      list-style: none; }
+    .header ul.main-nav a {
+      text-decoration: none;
+      display: block;
+      color: #fff; }
+
+.main-nav a {
+  color: #34495e;
+  font-size: .99em; }
+
+.main-nav a:hover {
+  color: #718daa; }
+
+/* ================================= 
+  Media Queries
+==================================== */
 /*Container*/
 .container {
   max-width: 124rem;
@@ -168,6 +209,128 @@ h1 {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center; }
-  @media (max-width: 26.62em) {
-    .sectionwrapper {
-      min-height: 45vh; } }
+
+.heading-full h2 {
+  font-family: Montserrat;
+  font-size: 30px;
+  margin-bottom: auto;
+  font-weight: 600;
+  margin-top: 0; }
+
+.heading-full h3 {
+  font-family: Montserrat;
+  font-size: 13px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+/*--------------------------------------------------------------
+# Section1 - Slide show in Main page
+--------------------------------------------------------------*/
+.section1 {
+  /* -- News Board --*/ }
+  .section1 .home1flex li.slide1 {
+    height: 405px;
+    background: url(./img/slider1/1.jpeg) no-repeat;
+    background-size: contain; }
+  .section1 .home1flex li.slide2 {
+    height: 405px;
+    background: url(./img/slider1/2.jpeg) no-repeat;
+    background-size: contain; }
+  .section1 .home1flex li.slide3 {
+    height: 405px;
+    background: url(./img/slider1/6.jpeg) no-repeat;
+    background-size: contain; }
+  .section1 .home1flex li.slide4 {
+    height: 405px;
+    background: url(./img/slider1/8.jpeg) no-repeat;
+    background-size: contain; }
+  .section1 .home1flex li.slide5 {
+    height: 405px;
+    background: url(./img/slider1/13.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top; }
+  .section1 .home1flex li.slide6 {
+    height: 405px;
+    background: url(./img/slider1/9.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .section1 .home1flex li.slide7 {
+    height: 405px;
+    background: url(./img/slider1/17.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top; }
+  .section1 .home1flex li.slide8 {
+    height: 405px;
+    background: url(./img/slider1/11.jpeg) no-repeat;
+    background-size: contain;
+    background-position: top; }
+  .section1 .home1flex li.slide9 {
+    height: 405px;
+    background: url(./img/slider1/3.jpeg) no-repeat;
+    background-size: cover;
+    background-position-y: -190px; }
+  .section1 .home1flex li.slide10 {
+    height: 405px;
+    background: url(./img/slider1/2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .section1 .home1flex li.slide11 {
+    height: 405px;
+    background: url(./img/slider1/21.jpg) no-repeat;
+    background-size: cover; }
+  .section1 .home1flex .caption {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    padding: 14px;
+    background-color: #862633;
+    margin-top: 354px; }
+    .section1 .home1flex .caption a:visited {
+      color: #e8ce16;
+      text-decoration: underline; }
+  .section1 .home1flex .caption-wide {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    padding: 14px;
+    background-color: #862633;
+    margin-top: 330px; }
+    .section1 .home1flex .caption-wide a:visited {
+      color: #e8ce16;
+      text-decoration: underline; }
+  .section1 .home1flex .caption-toowide {
+    font-size: 13px;
+    margin-top: 307px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    padding: 14px;
+    background-color: #862633; }
+    .section1 .home1flex .caption-toowide a:visited {
+      color: #e8ce16;
+      text-decoration: underline; }
+  .section1 #newsboard {
+    height: 24em; }
+    .section1 #newsboard #bg {
+      background-color: #e8ce16;
+      margin-left: 10px;
+      margin-right: 10px; }
+      .section1 #newsboard #bg h3 {
+        text-align: center;
+        font-family: Montserrat;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 4px;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+    .section1 #newsboard ul {
+      margin: 0;
+      color: #fff;
+      list-style: none;
+      padding-left: 2px;
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+      text-align: left; }
+    .section1 #newsboard a,
+    .section1 #newsboard a:visited {
+      color: #fff; }
+    .section1 #newsboard hr {
+      margin-top: 6px;
+      margin-bottom: 6px; }

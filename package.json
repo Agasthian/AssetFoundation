@@ -6,8 +6,8 @@
   "license": "",
   "author": "Agasthian",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "start": "npm run build && npm run dev",
+    "start": "node-sass sass/main.scss css/style.css -w",
+    "startold": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
