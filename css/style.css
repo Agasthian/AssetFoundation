@@ -228,82 +228,52 @@ p {
 --------------------------------------------------------------*/
 .section1 {
   /* -- News Board --*/ }
-  .section1 .home1flex li.slide1 {
+  .section1 .slider1 .slide1 {
     height: 405px;
     background: url(./img/slider1/1.jpeg) no-repeat;
     background-size: contain; }
-  .section1 .home1flex li.slide2 {
+  .section1 .slider1 .slide2 {
     height: 405px;
     background: url(./img/slider1/2.jpeg) no-repeat;
     background-size: contain; }
-  .section1 .home1flex li.slide3 {
+  .section1 .slider1 .slide3 {
     height: 405px;
     background: url(./img/slider1/6.jpeg) no-repeat;
     background-size: contain; }
-  .section1 .home1flex li.slide4 {
+  .section1 .slider1 .slide4 {
     height: 405px;
     background: url(./img/slider1/8.jpeg) no-repeat;
     background-size: contain; }
-  .section1 .home1flex li.slide5 {
+  .section1 .slider1 .slide5 {
     height: 405px;
     background: url(./img/slider1/13.jpeg) no-repeat;
     background-size: cover;
     background-position: top; }
-  .section1 .home1flex li.slide6 {
+  .section1 .slider1 .slide6 {
     height: 405px;
     background: url(./img/slider1/9.jpeg) no-repeat;
     background-size: cover;
     background-position: center; }
-  .section1 .home1flex li.slide7 {
+  .section1 .slider1 .slide7 {
     height: 405px;
     background: url(./img/slider1/17.jpeg) no-repeat;
     background-size: cover;
     background-position: top; }
-  .section1 .home1flex li.slide8 {
+  .section1 .slider1 .slide8 {
     height: 405px;
     background: url(./img/slider1/11.jpeg) no-repeat;
     background-size: contain;
     background-position: top; }
-  .section1 .home1flex li.slide9 {
+  .section1 .slider1 .slide9 {
     height: 405px;
     background: url(./img/slider1/3.jpeg) no-repeat;
     background-size: cover;
     background-position-y: -190px; }
-  .section1 .home1flex li.slide10 {
-    height: 405px;
-    background: url(./img/slider1/2.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center; }
-  .section1 .home1flex li.slide11 {
-    height: 405px;
-    background: url(./img/slider1/21.jpg) no-repeat;
-    background-size: cover; }
-  .section1 .home1flex .caption {
+  .section1 .slider1 .caption {
     font-family: "Poppins", sans-serif;
     color: #fff;
-    padding: 14px;
-    background-color: #862633;
-    margin-top: 354px; }
-    .section1 .home1flex .caption a:visited {
-      color: #e8ce16;
-      text-decoration: underline; }
-  .section1 .home1flex .caption-wide {
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-    padding: 14px;
-    background-color: #862633;
-    margin-top: 330px; }
-    .section1 .home1flex .caption-wide a:visited {
-      color: #e8ce16;
-      text-decoration: underline; }
-  .section1 .home1flex .caption-toowide {
-    font-size: 13px;
-    margin-top: 307px;
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-    padding: 14px;
     background-color: #862633; }
-    .section1 .home1flex .caption-toowide a:visited {
+    .section1 .slider1 .caption a:visited {
       color: #e8ce16;
       text-decoration: underline; }
   .section1 #newsboard {

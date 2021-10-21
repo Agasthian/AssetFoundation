@@ -18,115 +18,81 @@
 # Section1 - Slide show in Main page
 --------------------------------------------------------------*/
 .section1 {
-    .home1flex {
-      li.slide1 {
-        height: 405px;
-        background: url(./img/slider1/1.jpeg)
-          no-repeat;
-        background-size: contain;
-      }
-      li.slide2 {
-        height: 405px;
-        background: url(./img/slider1/2.jpeg)
-          no-repeat;
-        background-size: contain;
-      }
-      li.slide3 {
-        height: 405px;
-        background: url(./img/slider1/6.jpeg)
-          no-repeat;
-        background-size: contain;
-      }
-      li.slide4 {
-        height: 405px;
-        background: url(./img/slider1/8.jpeg)
-          no-repeat;
-        background-size: contain;
-      }
-      li.slide5 {
-        height: 405px;
-        background: url(./img/slider1/13.jpeg)
-          no-repeat;
-        background-size: cover;
-        background-position: top;
-      }
-      li.slide6 {
-        height: 405px;
-        background: url(./img/slider1/9.jpeg)
-          no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
-      li.slide7 {
-        height: 405px;
-        background: url(./img/slider1/17.jpeg)
-          no-repeat;
-        background-size: cover;
-        background-position: top;
-      }
-      li.slide8 {
-        height: 405px;
-        background: url(./img/slider1/11.jpeg)
-          no-repeat;
-        background-size: contain;
-        background-position: top;
-      }
-      li.slide9 {
-        height: 405px;
-        background: url(./img/slider1/3.jpeg)
-          no-repeat;
-        background-size: cover;
-        background-position-y: -190px;
-      }
-      li.slide10 {
-        height: 405px;
-        background: url(./img/slider1/2.jpeg)
-          no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
-      li.slide11 {
-        height: 405px;
-        background: url(./img/slider1/21.jpg)
-          no-repeat;
-        background-size: cover;
-      }
-      .caption {
-        font-family: $font-para;
-        color: #fff;
-        padding: 14px;
-        background-color: $color-primary;
-        margin-top: 354px;
-  
-        a:visited {
-          color: $color-secondary;
-          text-decoration: underline;
-        }
-      }
-      .caption-wide {
-        font-family: $font-para;
-        color: #fff;
-        padding: 14px;
-        background-color: $color-primary;
-        margin-top: 330px;
-        a:visited {
-          color: #e8ce16;
-          text-decoration: underline;
-        }
-      }
-      .caption-toowide {
-        font-size: 13px;
-        margin-top: 307px;
-        font-family: $font-para;
-        color: #fff;
-        padding: 14px;
-        background-color: $color-primary;
-        a:visited {
-          color: #e8ce16;
-          text-decoration: underline;
-        }
+  .slider1{
+    .slide1 {
+      height: 405px;
+      background: url(./img/slider1/1.jpeg)
+        no-repeat;
+      background-size: contain;
+    }
+    .slide2 {
+      height: 405px;
+      background: url(./img/slider1/2.jpeg)
+        no-repeat;
+      background-size: contain;
+    }
+    .slide3 {
+      height: 405px;
+      background: url(./img/slider1/6.jpeg)
+        no-repeat;
+      background-size: contain;
+    }
+    .slide4 {
+      height: 405px;
+      background: url(./img/slider1/8.jpeg)
+        no-repeat;
+      background-size: contain;
+    }
+    .slide5 {
+      height: 405px;
+      background: url(./img/slider1/13.jpeg)
+        no-repeat;
+      background-size: cover;
+      background-position: top;
+    }
+    .slide6 {
+      height: 405px;
+      background: url(./img/slider1/9.jpeg)
+        no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .slide7 {
+      height: 405px;
+      background: url(./img/slider1/17.jpeg)
+        no-repeat;
+      background-size: cover;
+      background-position: top;
+    }
+    .slide8 {
+      height: 405px;
+      background: url(./img/slider1/11.jpeg)
+        no-repeat;
+      background-size: contain;
+      background-position: top;
+    }
+    .slide9 {
+      height: 405px;
+      background: url(./img/slider1/3.jpeg)
+        no-repeat;
+      background-size: cover;
+      background-position-y: -190px;
+    }
+
+    .caption {
+      font-family: $font-para;
+      color: #fff;
+      background-color: $color-primary;
+      
+
+      a:visited {
+        color: $color-secondary;
+        text-decoration: underline;
       }
     }
+  }
+
+
     /* -- News Board --*/
     #newsboard {
       height: 24em;
