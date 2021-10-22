@@ -193,6 +193,58 @@ p {
 /* ================================= 
   Media Queries
 ==================================== */
+/*-------------------------------------------------------------
+# CSS for Footer- ASSET Foundation
+--------------------------------------------------------------*/
+footer {
+  background-color: #333; }
+  footer .footer_class {
+    margin-top: 2rem; }
+    footer .footer_class .content1 {
+      margin-bottom: 3%;
+      padding-top: 1rem; }
+      footer .footer_class .content1 address {
+        color: #fff;
+        font-family: 'Montserrat', serif;
+        font-size: 15px; }
+        footer .footer_class .content1 address h3 {
+          margin-top: 4%;
+          font-family: Montserrat;
+          color: #fff; }
+      footer .footer_class .content1 p {
+        color: #fff;
+        font-family: Montserrat;
+        text-align: -webkit-center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 15px; }
+        footer .footer_class .content1 p a {
+          margin-left: 5%; }
+      footer .footer_class .content1 a {
+        color: #fff; }
+      footer .footer_class .content1 a:visited {
+        color: #fff; }
+      footer .footer_class .content1 a:hover {
+        color: #FFEB3B;
+        transition: 0.5s all;
+        text-decoration: none; }
+
+.footer2 {
+  background-color: #e8ce16;
+  text-align: -webkit-center; }
+
+.footer2 p {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  text-align: center; }
+
+.footer2 img {
+  width: 29%; }
+
+/*--------- End of Footer----------*/
 /*Container*/
 .container {
   max-width: 124rem;
@@ -304,3 +356,168 @@ p {
     .section1 #newsboard hr {
       margin-top: 6px;
       margin-bottom: 6px; }
+
+/*--------------------------------------------------------------
+# Section 2 - Special Announcement & News - Desktop CSS
+--------------------------------------------------------------*/
+.section2 .spl-news {
+  margin-top: 40px;
+  padding: 4%;
+  overflow: hidden;
+  background-color: #e8ce16; }
+  .section2 .spl-news img.spl-photo {
+    float: right;
+    width: 227px;
+    padding: 1em; }
+  .section2 .spl-news .h3-wrapper {
+    text-align: -webkit-center; }
+    .section2 .spl-news .h3-wrapper h3 {
+      font-weight: 600;
+      margin-top: 1px;
+      background-color: #f5ffff;
+      padding: 1%;
+      width: 40%;
+      text-align: -webkit-center;
+      font-weight: 600; }
+  .section2 .spl-news p {
+    margin-bottom: 0;
+    text-align: justify; }
+    .section2 .spl-news p span {
+      font-weight: bold; }
+  .section2 .spl-news p,
+  .section2 .spl-news h3 {
+    color: #862633;
+    font-family: "Poppins", sans-serif; }
+
+.section2 #newsletter-subscribe {
+  margin: 3em 0;
+  padding-bottom: 1em;
+  background-color: #403f3f;
+  height: 100%; }
+  .section2 #newsletter-subscribe .form {
+    color: #fff; }
+    .section2 #newsletter-subscribe .form h2 {
+      font-family: 'Merriweather', serif;
+      margin: 2rem 0;
+      font-size: 3rem; }
+    .section2 #newsletter-subscribe .form p {
+      font-family: "Poppins", sans-serif; }
+    .section2 #newsletter-subscribe .form #mc_embed_signup {
+      font-family: "Poppins", sans-serif; }
+      .section2 #newsletter-subscribe .form #mc_embed_signup .indicates-required {
+        font-size: 12px;
+        float: right; }
+      .section2 #newsletter-subscribe .form #mc_embed_signup label {
+        font-weight: 400; }
+      .section2 #newsletter-subscribe .form #mc_embed_signup input {
+        font-family: "Poppins", sans-serif; }
+      .section2 #newsletter-subscribe .form #mc_embed_signup .newsletter-submit-btn-wrapper {
+        text-align: center; }
+        .section2 #newsletter-subscribe .form #mc_embed_signup .newsletter-submit-btn-wrapper .newsletter-submit {
+          font-family: Poppins;
+          background-color: #e8ce16;
+          font-size: 15px;
+          font-weight: 700;
+          padding: 0.5em 3em 0.5em 3em;
+          margin-top: 0.6em;
+          margin-left: -6em;
+          border-radius: 0;
+          border: 0;
+          color: #862633;
+          margin-top: 1em;
+          box-shadow: none;
+          text-shadow: none; }
+
+/*--------------------------------------------------------------
+# Section 3 Start - Motto, 5 Elements , 7 wheels 
+--------------------------------------------------------------*/
+.section3 #motto {
+  margin-top: 5em; }
+  .section3 #motto .h3-wrapper {
+    text-align: -webkit-center;
+    margin-bottom: 2em; }
+    .section3 #motto .h3-wrapper h3 {
+      font-family: "Montserrat", sans-serif;
+      margin-top: 1px;
+      background-color: #862633;
+      color: #fff;
+      padding: 1%;
+      width: 40%;
+      text-align: -webkit-center;
+      font-weight: 500; }
+
+.section3 .wrapper-7wheel .video-animation1 iframe {
+  display: block;
+  margin: 0 auto; }
+
+/*--------------------------------------------------------------
+# Section 4 - Special Announcement & News - Desktop CSS
+--------------------------------------------------------------*/
+.section4 .latestvideo {
+  margin-top: 10em; }
+  .section4 .latestvideo .h3-wrapper {
+    text-align: -webkit-center;
+    margin-bottom: 2em; }
+    .section4 .latestvideo .h3-wrapper h3 {
+      font-family: "Montserrat", sans-serif;
+      margin-top: 1px;
+      background-color: #862633;
+      color: #fff;
+      padding: 1%;
+      width: 40%;
+      text-align: -webkit-center;
+      font-weight: 500; }
+
+/*--------------------------------------------------------------
+	# Section 5  Quote & Group Photo
+	----------------------------------------------------------------*/
+.section5 .quote {
+  position: relative;
+  font-family: 'Merriweather', serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-style: italic;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: -webkit-center; }
+  .section5 .quote:before {
+    content: '\201C';
+    position: absolute;
+    top: 0.25em;
+    left: -0.15em;
+    color: #e7e6e4;
+    font-size: 6em;
+    z-index: -1; }
+
+.section5 .visionmisson .h4-wrapper {
+  text-align: -webkit-center; }
+  .section5 .visionmisson .h4-wrapper h4 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 1px;
+    background-color: #862633;
+    color: #fff;
+    padding: 1%;
+    width: 40%;
+    text-align: -webkit-center;
+    font-weight: 500; }
+
+.section5 .asset-intro h4 {
+  font-family: "Montserrat", sans-serif; }
+
+.section5 .asset-intro .btn {
+  text-shadow: none;
+  background: #862633;
+  padding: 13px 30px;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  box-shadow: none; }
+
+.section5 .asset-intro .btn-4 {
+  border-radius: 0;
+  color: #fff; }
+
+.section5 .asset-intro .btn-4:hover {
+  color: #e8ce16; }

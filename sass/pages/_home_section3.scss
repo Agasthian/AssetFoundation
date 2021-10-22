@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+# Section 3 Start - Motto, 5 Elements , 7 wheels 
+--------------------------------------------------------------*/
+.section3 {
+    #motto {
+      margin-top: 5em;
+      .h3-wrapper {
+        text-align: -webkit-center;
+        margin-bottom: 2em;
+        h3 {
+          font-family: $font-heading;
+          margin-top: 1px;
+          background-color: $color-primary;
+          color: #fff;
+          padding: 1%;
+          width: 40%;
+          text-align: -webkit-center;
+          font-weight: 500;
+        }
+      }
+    }
+    .wrapper-7wheel {
+      .video-animation1 {
+        iframe {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }

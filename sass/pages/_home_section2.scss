@@ -1,0 +1,90 @@
+/*--------------------------------------------------------------
+# Section 2 - Special Announcement & News - Desktop CSS
+--------------------------------------------------------------*/
+.section2 {
+    .spl-news {
+      margin-top: 40px;
+      padding: 4%;
+      overflow: hidden;
+      background-color: #e8ce16;
+      img.spl-photo {
+        float: right;
+        width: 227px;
+        padding: 1em;
+      }
+      .h3-wrapper {
+        text-align: -webkit-center;
+        h3 {
+          font-weight: 600;
+          margin-top: 1px;
+          background-color: #f5ffff;
+          padding: 1%;
+          width: 40%;
+          text-align: -webkit-center;
+          font-weight: 600;
+        }
+      }
+      p {
+        margin-bottom: 0;
+        text-align: justify;
+        span {
+          font-weight: bold;
+        }
+      }
+      p,
+      h3 {
+        color: $color-primary;
+        font-family: $font-para;
+      }
+    }
+    // Newsletter subcription form
+    #newsletter-subscribe {
+      margin: 3em 0;
+      padding-bottom: 1em;
+      background-color: #403f3f;
+      height: 100%;
+      .form {
+        color: #fff;
+        h2 {
+          font-family: 'Merriweather', serif;
+          margin: 2rem 0;
+          font-size:3rem;
+        }
+        p {
+          font-family: $font-para;
+        }
+        #mc_embed_signup {
+          font-family: $font-para;
+          .indicates-required {
+            font-size: 12px;
+            float: right;
+          }
+          label {
+            font-weight: 400;
+          }
+          input {
+            font-family: $font-para;
+          }
+          .newsletter-submit-btn-wrapper {
+            text-align: center;
+            .newsletter-submit {
+              font-family: Poppins;
+              background-color: #e8ce16;
+              font-size: 15px;
+              font-weight: 700;
+              padding: 0.5em 3em 0.5em 3em;
+              margin-top: 0.6em;
+              margin-left: -6em;
+              border-radius: 0;
+              border: 0;
+              color: $color-primary;
+              margin-top: 1em;
+              box-shadow: none;
+              text-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  

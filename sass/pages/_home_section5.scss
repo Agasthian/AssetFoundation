@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+	# Section 5  Quote & Group Photo
+	----------------------------------------------------------------*/
+    $white: hsl(50, 5, 97);
+    $base-font-size: 1.4em;
+    $base-line-height: 1.5em;
+    .section5 {
+      .quote {
+        position: relative;
+        font-family: 'Merriweather', serif;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        font-style: italic;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        text-align: -webkit-center;
+        &:before {
+          content: '\201C';
+          position: absolute;
+          top: 0.25em;
+          left: -0.15em;
+          color: darken($white, 7%);
+          font-size: 6em;
+          z-index: -1;
+        }
+      }
+      .visionmisson {
+        .h4-wrapper {
+          text-align: -webkit-center;
+          h4 {
+            font-family: $font-heading;
+            margin-top: 1px;
+            background-color: $color-primary;
+            color: #fff;
+            padding: 1%;
+            width: 40%;
+            text-align: -webkit-center;
+            font-weight: 500;
+          }
+        }
+      }
+      .asset-intro {
+        h4 {
+          font-family: $font-heading;
+        }
+        .btn {
+          text-shadow: none;
+          background: #862633;
+          padding: 13px 30px;
+          letter-spacing: 2px;
+          font-family: $font-para;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s;
+          box-shadow: none;
+        }
+        .btn-4 {
+          border-radius: 0;
+          color: #fff;
+        }
+        .btn-4:hover {
+          color: #e8ce16;
+        }
+      }
+    }
+    

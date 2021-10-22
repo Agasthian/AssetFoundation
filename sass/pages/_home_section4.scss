@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+# Section 4 - Special Announcement & News - Desktop CSS
+--------------------------------------------------------------*/
+.section4 {
+    .latestvideo {
+      margin-top: 10em;
+      .h3-wrapper {
+        text-align: -webkit-center;
+        margin-bottom: 2em;
+        h3 {
+          font-family: $font-heading;
+          margin-top: 1px;
+          background-color: $color-primary;
+          color: #fff;
+          padding: 1%;
+          width: 40%;
+          text-align: -webkit-center;
+          font-weight: 500;
+        }
+      }
+    }
+  }
