@@ -578,3 +578,173 @@ footer {
 .financials .content ol {
   font-size: 16px;
   text-align: justify; }
+
+/*--------------------------------------------------------------
+# CSS for projects page - ASSET Foundation - Pane 1 - Heading alone
+--------------------------------------------------------------*/
+p:empty {
+  height: 0;
+  margin: 0;
+  padding: 0; }
+
+#projects-heading {
+  background-color: #28c5d4;
+  height: 23em; }
+
+#heading-verticalalign {
+  padding: 8% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#heading-verticalalign h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: -webkit-xxx-large;
+  font-weight: bold; }
+
+#heading-verticalalign hr {
+  width: 20%;
+  height: 3px;
+  background-color: #ffea55; }
+
+/* ----------------------------------
+        Pane 2 - Year tab Button CSS
+    -------------------------------------*/
+.year-tabs {
+  position: relative; }
+
+.nav-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid #ddd0; }
+
+.nav-tabs > li {
+  float: none;
+  display: inline-block; }
+
+.nav-tabs > li > a {
+  font-size: 22px;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: crimson; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #000; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: 1px solid transparent;
+  border-bottom-color: crimson;
+  border-bottom-width: 3px; }
+
+.tab-control .previous-button,
+.tab-control .next-button {
+  position: absolute;
+  top: 0.1em; }
+
+.tab-control .previous-button {
+  left: 40%; }
+
+.tab-control .next-button {
+  right: 37%; }
+
+.tab-control a {
+  font-size: xx-large;
+  color: crimson; }
+
+/* ----------------------------------
+        Pane 3 - Start of Content
+    -------------------------------------*/
+.our-work {
+  background-color: #f7f7f7; }
+
+.our-work h3 {
+  color: #000;
+  font-weight: bold;
+  font-family: Montserrat;
+  text-align: center;
+  padding-top: 2em; }
+
+.our-work hr {
+  width: 15%;
+  height: 2px; }
+
+.our-work .student-card-wrapper {
+  padding: 10px 10px 15px 10px; }
+
+.our-work .student-card-wrapper .student-card {
+  background-color: #fff;
+  height: 18em;
+  -webkit-box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08); }
+
+.our-work .student-card:hover {
+  -webkit-box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.34);
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.34);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 1s; }
+
+.our-work .student-card-wrapper .student-card .student-content {
+  padding: 25px 10px 10px 10px; }
+
+.our-work .student-card-wrapper .student-card .student-content .student-img {
+  width: 55%;
+  margin: 0 auto; }
+
+.our-work .student-card-wrapper .student-card .student-content .student-img1 {
+  width: 40%;
+  margin: 0 auto; }
+
+.our-work .student-card-wrapper .student-card .student-content .student-img img,
+.student-img1 img {
+  border-radius: 50%;
+  height: 120px; }
+
+.our-work
+.student-card-wrapper
+.student-card
+.student-content
+.student-name
+h4 {
+  color: #14cadc;
+  font-weight: bold;
+  font-family: Montserrat;
+  text-align: center;
+  padding-top: 1em; }
+
+.our-work
+.student-card-wrapper
+.student-card
+.student-content
+.student-name
+h5 {
+  font-weight: bold;
+  font-family: Montserrat;
+  text-align: center; }
+
+#student-description {
+  margin-top: 2em; }
+
+#student-description p {
+  margin: 0;
+  font-family: Noto Sans;
+  font-size: 16px; }
+
+#student-description .legend-box {
+  width: 360px;
+  height: auto;
+  border: 1px solid #000;
+  background-color: rgba(133, 133, 133, 0.14);
+  margin-top: 1em; }
+
+#student-description .legend-box .legend-box-wrapper {
+  margin: 30px; }
+
+#student-description .legend-box .legend-box-wrapper h4 {
+  text-align: center;
+  font-family: Montserrat;
+  text-transform: uppercase; }

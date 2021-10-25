@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# CSS for Gallery - ASSET Foundation
+--------------------------------------------------------------*/
+  
+  .gallery {
+    margin-top: 3rem;
+  }
+  .gallery #heading h3 {
+    font-family: Montserrat;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .gallery .ngg-album-compactbox {
+    border-radius: 0;
+    padding: 0 !important;
+    border: 3px solid #ffc50d;
+  }
+  .gallery .ngg-album-compactbox:before {
+    border-radius: 3px;
+    bottom: -12px;
+    border-bottom: 3px solid #d79643;
+  }
+  .gallery .ngg-album-compactbox:after {
+    border-radius: 4px;
+    bottom: -8px;
+    border-bottom: 3px solid #ffc50d;
+  }
+  .gallery .ngg-album-compactbox .Thumb {
+    border: none !important;
+  }
+  .gallery h4 {
+    font-family: Lato;
+  }
+  .gallery h4 a {
+    text-decoration: none;
+    color: #444444;
+  }
+  .gallery h4 a:visited {
+    color: transparent;
+  }
+  .gallery ul.ngg-breadcrumbs > li {
+    font-family: Lato;
+  }
+  .ngg-album-compact h4 .ngg-album-desc {
+    height: 0px;
+  }
+  .gallery .ngg-album-compact {
+  }
+  
