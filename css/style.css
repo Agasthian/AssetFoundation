@@ -589,10 +589,10 @@ p:empty {
 
 #projects-heading {
   background-color: #28c5d4;
-  height: 23em; }
+  height: 12em; }
 
 #heading-verticalalign {
-  padding: 8% 0;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -618,7 +618,31 @@ p:empty {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-bottom: 1px solid #ddd0; }
+  border-bottom: 1px solid #ddd0;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1; }
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: crimson; }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd; }
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc; }
 
 .nav-tabs > li {
   float: none;
@@ -731,7 +755,7 @@ h5 {
 
 #student-description p {
   margin: 0;
-  font-family: Noto Sans;
+  font-family: "Poppins", sans-serif;
   font-size: 16px; }
 
 #student-description .legend-box {
@@ -748,3 +772,49 @@ h5 {
   text-align: center;
   font-family: Montserrat;
   text-transform: uppercase; }
+
+/*--------------------------------------------------------------
+# CSS for Gallery - ASSET Foundation
+--------------------------------------------------------------*/
+.gallery {
+  margin-top: 13rem; }
+
+.gallery #heading h3 {
+  font-family: Montserrat;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+.gallery .ngg-album-compactbox {
+  border-radius: 0;
+  padding: 0 !important;
+  border: 3px solid #ffc50d; }
+
+.gallery .ngg-album-compactbox:before {
+  border-radius: 3px;
+  bottom: -12px;
+  border-bottom: 3px solid #d79643; }
+
+.gallery .ngg-album-compactbox:after {
+  border-radius: 4px;
+  bottom: -8px;
+  border-bottom: 3px solid #ffc50d; }
+
+.gallery .ngg-album-compactbox .Thumb {
+  border: none !important; }
+
+.gallery h4 {
+  font-family: Lato; }
+
+.gallery h4 a {
+  text-decoration: none;
+  color: #444444; }
+
+.gallery h4 a:visited {
+  color: transparent; }
+
+.gallery ul.ngg-breadcrumbs > li {
+  font-family: Lato; }
+
+.ngg-album-compact h4 .ngg-album-desc {
+  height: 0px; }

@@ -1,13 +1,33 @@
 
 
+function openYear(evt, year) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+	  tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+	  tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+	document.getElementById(year).style.display = "block";
+	evt.currentTarget.className += " active";
+  }
 
-/* -------Projects Page - Arrow click - Next Previous for year Changing------- */
-$j('.next-button').click(function () {
-	$j('.nav-tabs > .active').next('li').find('a').trigger('click');
-	//trigger the click on the tab same like we click on the tab
-});
-
-$j('.previous-button').click(function () {
-	$j('.nav-tabs > .active').prev('li').find('a').trigger('click');
-	//trigger the click on the tab same like we click on the tab
-})
+function openCity(evt, cityName) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+	  tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+	  tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+	document.getElementById(cityName).style.display = "block";
+	evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  
