@@ -144,6 +144,8 @@ p:empty {
   .our-work .student-card-wrapper .student-card .student-content .student-img {
     width: 55%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
   .our-work .student-card-wrapper .student-card .student-content .student-img1 {
     width: 40%;
