@@ -56,7 +56,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box; }
@@ -71,11 +71,11 @@ nav {
   font-family: 'Playfair Display', serif; }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold; }
 
-p {
-  font-size: 1.8rem; }
+.carousel-inner {
+  font-size: 1rem; }
 
 .btn, .btn:link, .btn:visited {
   font-size: 1.2rem;
@@ -158,14 +158,16 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 15vh;
+  min-height: 13vh;
   background-color: #862633;
   font-weight: 500;
   border-bottom: 5px solid #e8ce16;
   -webkit-box-shadow: 0 0 20px 0 black;
-  box-shadow: 0 0 20px 0 black; }
+  box-shadow: 0 0 20px 0 black;
+  font-size: 1.2rem;
+  margin-bottom: 2rem; }
   .header .logo {
-    width: 14%;
+    width: 12%;
     position: absolute;
     left: 6%;
     top: 1%; }
@@ -175,7 +177,8 @@ p {
     justify-content: space-around;
     margin-top: 1%;
     padding-left: 12%;
-    font-family: Montserrat; }
+    font-family: Montserrat;
+    font-size: 1.2rem; }
     .header ul.main-nav li {
       list-style: none; }
     .header ul.main-nav a {
@@ -246,12 +249,6 @@ footer {
 
 /*--------- End of Footer----------*/
 /*Container*/
-.container {
-  max-width: 124rem;
-  padding: 0px 4rem;
-  margin: 0px auto;
-  width: 100%; }
-
 .sectionwrapper {
   width: 100%;
   min-height: 100vh;
@@ -283,19 +280,19 @@ footer {
   .section1 .slider1 .slide1 {
     height: 405px;
     background: url(./img/slider1/1.jpeg) no-repeat;
-    background-size: contain; }
+    background-size: cover; }
   .section1 .slider1 .slide2 {
     height: 405px;
     background: url(./img/slider1/2.jpeg) no-repeat;
-    background-size: contain; }
+    background-size: cover; }
   .section1 .slider1 .slide3 {
     height: 405px;
     background: url(./img/slider1/6.jpeg) no-repeat;
-    background-size: contain; }
+    background-size: cover; }
   .section1 .slider1 .slide4 {
     height: 405px;
     background: url(./img/slider1/8.jpeg) no-repeat;
-    background-size: contain; }
+    background-size: cover; }
   .section1 .slider1 .slide5 {
     height: 405px;
     background: url(./img/slider1/13.jpeg) no-repeat;
@@ -314,7 +311,7 @@ footer {
   .section1 .slider1 .slide8 {
     height: 405px;
     background: url(./img/slider1/11.jpeg) no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: top; }
   .section1 .slider1 .slide9 {
     height: 405px;
@@ -362,7 +359,7 @@ footer {
 --------------------------------------------------------------*/
 .section2 .spl-news {
   margin-top: 40px;
-  padding: 4%;
+  padding: 2% 4%;
   overflow: hidden;
   background-color: #e8ce16; }
   .section2 .spl-news img.spl-photo {
@@ -568,6 +565,9 @@ footer {
     font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 40px; }
+  .financials .trustee-details img.trustee {
+    width: 200px;
+    height: 250px; }
 
 .financials .content h4 {
   font-family: Montserrat;
@@ -820,3 +820,35 @@ h5 {
 
 .ngg-album-compact h4 .ngg-album-desc {
   height: 0px; }
+
+/*--------------------------------------------------------------
+  # CSS for Contact Us - ASSET Foundation
+  --------------------------------------------------------------*/
+.contact {
+  margin-top: 12rem; }
+
+.contact #heading h3 {
+  font-family: Montserrat;
+  line-height: 14px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+.contact h4 {
+  font-family: Montserrat;
+  font-size: 20px;
+  margin-top: 1rem; }
+
+.contact p {
+  font-size: 16px; }
+
+.contact address {
+  font-size: 16px; }
+
+.contact-img {
+  text-align: center; }
+
+.contact-img2 {
+  text-align: center;
+  margin-top: 6%; }

@@ -3,16 +3,18 @@
 	display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 15vh;
+    min-height: 13vh;
     background-color: $color-primary;
     font-weight: 500;
     border-bottom: 5px solid $color-secondary;
     -webkit-box-shadow: 0 0 20px 0 black;
     box-shadow: 0 0 20px 0 black;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
 
 
 	.logo {
-		width: 14%;
+		width: 12%;
 		position: absolute;
 		left: 6%;
 		top: 1%;
@@ -25,6 +27,7 @@
 		margin-top: 1%;
 		padding-left: 12%;
 		font-family: Montserrat;
+		font-size: 1.2rem;
 
 		li{
 			list-style: none;
