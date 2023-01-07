@@ -5,6 +5,9 @@
   "keywords": "",
   "license": "",
   "author": "Agasthian",
+  "engines": {
+    "node": ">=0.10.3 <16.14.0"
+  },
   "scripts": {
     "start": "node-sass sass/main.scss css/style.css -w",
     "startold": "npm run build && npm run dev",
