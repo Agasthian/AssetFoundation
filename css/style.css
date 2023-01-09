@@ -566,19 +566,20 @@ footer {
     font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 40px; }
-  .financials .trustee-details img.trustee {
+  .financials .content #auditor {
+    cursor: pointer;
+    height: 300px;
     width: 200px;
-    height: 250px; }
-
-.financials .content h4 {
-  font-family: Montserrat;
-  font-size: larger; }
-
-.financials .content p,
-.financials .content ul,
-.financials .content ol {
-  font-size: 16px;
-  text-align: justify; }
+    margin-bottom: 4rem; }
+  .financials .content h4 {
+    font-family: Montserrat;
+    font-size: larger; }
+  .financials .content p, .financials .content ul, .financials .content ol {
+    font-size: 16px;
+    text-align: justify; }
+  .financials .content .trustee-details img.trustee {
+    width: 150px;
+    height: 185px; }
 
 /*--------------------------------------------------------------
 # CSS for projects page - ASSET Foundation - Pane 1 - Heading alone

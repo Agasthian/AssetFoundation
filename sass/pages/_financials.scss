@@ -15,22 +15,31 @@
     }
 
 
-    .trustee-details{
-      img.trustee{
+    
+
+    .content{
+
+      #auditor{
+        cursor: pointer;
+        height: 300px;
         width: 200px;
-        height: 250px;
+        margin-bottom: 4rem;
+      }
+      h4{
+        font-family: Montserrat;
+        font-size: larger;
+      }
+      p,ul,ol{
+        font-size: 16px;
+        text-align: justify;
+      }
+      .trustee-details{
+        img.trustee{
+          width: 150px;
+          height: 185px;
+        }
       }
     }
   }
-  .financials .content h4 {
-    font-family: Montserrat;
-    font-size: larger;
-  }
   
-  .financials .content p,
-  .financials .content ul,
-  .financials .content ol {
-    
-    font-size: 16px;
-    text-align: justify;
-  }
+  
