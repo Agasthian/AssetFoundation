@@ -68,7 +68,7 @@ h4,
 h5,
 h6,
 nav {
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Montserrat', serif; }
 
 h1 {
   font-size: 3rem;
@@ -792,6 +792,14 @@ p:empty {
 
 .ngg-album-compact h4 .ngg-album-desc {
   height: 0px; }
+
+/*--------------------------------------------------------------
+  # CSS for Donation page - ASSET Foundation
+  --------------------------------------------------------------*/
+.donationform {
+  margin-top: 10rem; }
+  .donationform .heading {
+    font-family: Montserrat; }
 
 /*--------------------------------------------------------------
   # CSS for Contact Us - ASSET Foundation
