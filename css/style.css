@@ -798,8 +798,12 @@ p:empty {
   --------------------------------------------------------------*/
 .donationform {
   margin-top: 10rem; }
-  .donationform .heading {
-    font-family: Montserrat; }
+  .donationform h3 {
+    font-size: 1.8rem;
+    font-weight: bold; }
+  .donationform #heading {
+    font-family: Montserrat;
+    margin-top: 4rem; }
 
 /*--------------------------------------------------------------
   # CSS for Contact Us - ASSET Foundation
