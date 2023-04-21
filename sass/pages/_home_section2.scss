@@ -7,7 +7,12 @@
       padding:2% 4%;
       overflow: hidden;
       background-color: #e8ce16;
-      img.spl-photo {
+      img.spl-photo1 {
+        float: right;
+        width: 60rem;
+        padding: 1em;
+      }
+      img.spl-photo2 {
         float: right;
         width: 227px;
         padding: 1em;
@@ -27,6 +32,7 @@
       p {
         margin-bottom: 0;
         text-align: justify;
+        font-size: 1.5rem;
         span {
           font-weight: bold;
         }

@@ -280,7 +280,7 @@ footer {
   /* -- News Board --*/ }
   .section1 .slider1 .slide1 {
     height: 405px;
-    background: url(./img/slider1/1.jpeg) no-repeat;
+    background: url(./img/slider1/10.jpeg) no-repeat;
     background-size: cover; }
   .section1 .slider1 .slide2 {
     height: 405px;
@@ -363,7 +363,11 @@ footer {
   padding: 2% 4%;
   overflow: hidden;
   background-color: #e8ce16; }
-  .section2 .spl-news img.spl-photo {
+  .section2 .spl-news img.spl-photo1 {
+    float: right;
+    width: 60rem;
+    padding: 1em; }
+  .section2 .spl-news img.spl-photo2 {
     float: right;
     width: 227px;
     padding: 1em; }
@@ -379,7 +383,8 @@ footer {
       font-weight: 600; }
   .section2 .spl-news p {
     margin-bottom: 0;
-    text-align: justify; }
+    text-align: justify;
+    font-size: 1.5rem; }
     .section2 .spl-news p span {
       font-weight: bold; }
   .section2 .spl-news p,
