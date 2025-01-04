@@ -843,8 +843,8 @@ p:empty {
   margin-top: 6%; }
 
 .student-img {
-    width: 20em;
-    height: 6.8em;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
