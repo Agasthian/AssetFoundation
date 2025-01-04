@@ -841,3 +841,17 @@ p:empty {
 .contact-img2 {
   text-align: center;
   margin-top: 6%; }
+
+.student-img {
+    width: 20em;
+    height: 6.8em;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
