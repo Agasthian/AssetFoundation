@@ -855,3 +855,123 @@ p:empty {
     height: 100%;
     object-fit: cover;
 }
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header .logo {
+    width: 20%;
+    margin-bottom: 1rem;
+  }
+
+  .header ul.main-nav {
+    width: 100%;
+    flex-direction: column; 
+    padding: 0;
+  }
+
+  .header ul.main-nav li {
+    margin: 0.5rem 0;
+  }
+
+  .header ul.main-nav a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .header .logo {
+    width: 25%;
+  }
+
+  .header ul.main-nav a {
+    font-size: 14px;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* General Responsive Styles */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 90%; /* Adjust base font size for smaller screens */
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column; /* Stack header elements */
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #34495e;
+    padding: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center; 
+    margin: 0.5rem 0;
+  }
+
+  p {
+    padding: 0 1rem; 
+    text-align: justify;
+  }
+
+  section, article, aside {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table th, table td {
+    padding: 0.5rem;
+    text-align: left;
+  }
+}
