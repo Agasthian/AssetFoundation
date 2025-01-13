@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,6 +28,86 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <!-- Main Style.css -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact {
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+
+        #heading h3 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        address {
+            font-style: normal;
+            line-height: 1.8;
+        }
+
+        .contact-img1 img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-img1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+      .contact-img1 .contact-image {
+          width: 100%;
+          max-width: 500px;
+          height: auto; 
+          border-radius: 5px;
+      }
+
+      .contact {
+        margin-top: 5rem !important; }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .main-nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .contact .row {
+                flex-direction: column;
+            }
+
+            .footer_class {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .main-nav a {
+                font-size: 0.9rem;
+            }
+
+            #heading h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+
+    </style>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-961ZW8JP0Y"></script>
@@ -39,109 +118,100 @@
 
   gtag('config', 'G-961ZW8JP0Y');
 </script>
+
 <body>
-    <header class="header">
-        <a href="/">
-          <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
-        </a>
-          <ul class="main-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./trust-financials.html">Trust Financials</a></li>
-            <li><a href="./project.html">Projects</a></li>
-            <li><a href="./donation.html">Donation</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./events.html">Events</a></li>
-          </ul>
-        </header> 
-    
-      <!-- Add your site or application content here -->
-    
+  <header class="header">
+    <a href="/">
+      <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
+    </a>
+      <ul class="main-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./trust-financials.html">Trust Financials</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="./donation.html">Donation</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./events.html">Events</a></li>
+      </ul>
+    </header> 
 
-      <!-- Asset foundations- contact us page -->
-
-      <div class="contact">
+    <div class="contact">
         <div class="container">
-          <div id="heading">
-            <h3>Contact Us</h3>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h4>Registered Office and Mailing Address :</h4>
+            <div id="heading">
+                <h3 style="margin-bottom: 2em;margin-top: 0;">Contact Us</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 style="font-weight: bold; margin-bottom: 1em;">Registered Office and Mailing Address:</h4>
+                    <address style="margin-bottom: 2em;">
+                        A.S.S.E.T Foundation<br>
+                        6/17, Trust Square Street, <br>
+                        Ramalingapuram,<br>
+                        Chennai – 600012, India.<br>
+                        <abbr title="Phone">Ph:</abbr> (044)2645-4939<br>
+                        <abbr title="Phone">Mobile:</abbr> +91-9884256088<br>
+                        Email: <a href="mailto:assetfdn@gmail.com">assetfdn@gmail.com</a>
+                    </address>
+                </div>
+                <div class="col-md-6">
+                  <div class="contact-img1 img-responsive">
+                      <img src="./img/contactus.png" alt="Contact Us" class="contact-image">
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="footer_class">
+        <div class="container">	
+          <div class="content1">
               <address>
-                A.S.S.E.T Foundation<br>
-                6/17, Trust Square Street, <br>
+              <h3>A.S.S.E.T Foundation</h3>
+                6/17, Trust Street Square, <br>
                 Ramalingapuram,<br>
                 Chennai – 600012, India.<br>
                 <abbr title="Phone">Ph:</abbr> (044)2645-4939. <br>
                 <abbr title="Phone">Mobile:</abbr> +91-9884256088.<br>
-                E-Mail : assetfdn@gmail.com.
-              </address>		
-                
-            </div>
-            <div class="col-md-6">
-              <div class="contact-img1 img-responsive ">
-                <img style="width: 40rem;" src="./img/contactus.png">	
-              </div>				
-            </div>
-          </div>
-
+              E-Mail :<a style="color:#FFEB3B;margin-left: 0%;" href="mailto:assetfdn@gmail.com"> assetfdn@gmail.com</a>			  
+              </address>
+            <p>	
+              <a href="./about.html">About Us</a>
+              <a href="./donation.html">Donate</a>
+              <a href="./project.html">Projects</a>
+              <a href="./trust-financials.html">Financials</a>
+              <a href="./contact.html">Contact Us</a>
+              <a href="./events.html">Events</a>
+            </p>
+          </div>        
         </div>
-      </div>	
-
-      
-<!--------------------------------------------------------------
-# Footer
----------------------------------------------------------------->
-<footer>
-  <div class="footer_class">
-    <div class="container">	
-      <div class="content1">
-          <address>
-          <h3>A.S.S.E.T Foundation</h3>
-            6/17, Trust Street Square, <br>
-            Ramalingapuram,<br>
-            Chennai – 600012, India.<br>
-            <abbr title="Phone">Ph:</abbr> (044)2645-4939. <br>
-            <abbr title="Phone">Mobile:</abbr> +91-9884256088.<br>
-          E-Mail :<a style="color:#FFEB3B;margin-left: 0%;" href="mailto:assetfdn@gmail.com"> assetfdn@gmail.com</a>			  
-          </address>
-        <p>	
-          <a href="./about.html">About Us</a>
-          <a href="./donation.html">Donate</a>
-          <a href="./project.html">Projects</a>
-          <a href="./trust-financials.html">Financials</a>
-          <a href="./contact.html">Contact Us</a>
-          <a href="./events.html">Events</a>
-        </p>
-      </div>        
-    </div>
-  </div>
-  <div class="footer2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <p>2023 ASSET ©</p>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-          <img src="./img//FINAL logo-compressed.png">
-        </div>
-        <div class="col-md-4">
-          <p>Educate and Elevate</p>
-        </div>				
       </div>
-    </div>	
-  </div>
-</footer>
-
-<!--------------------------------------------------------------
-# Footer - end
----------------------------------------------------------------->
-
-      <!-- Bootstrap 5 -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+      <div class="footer2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <p>2023 ASSET ©</p>
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+              <img src="./img//FINAL logo-compressed.png">
+            </div>
+            <div class="col-md-4">
+              <p>Educate and Elevate</p>
+            </div>				
+          </div>
+        </div>	
+      </div>
+    </footer>
+    
+    <!--------------------------------------------------------------
+    # Footer - end
+    ---------------------------------------------------------------->
+    
+          <!-- Bootstrap 5 -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+      <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+    </html>
+    
