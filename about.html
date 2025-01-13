@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASSET Foundation | About Us | Chennai</title>
+    <title>ASSET Foundation | Projects | Chennai </title>
     <meta name="AssetFoundation" content="A.S.S.E.T Foundation Educational trust and the formation of the trust by Alumni association of Sir M.Ct.M Boys School Chennai , India.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -29,47 +29,98 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <!-- Main Style.css -->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-      .core-values {
-        margin-top: 5rem;
-        margin-bottom: 1.3em; 
-        font-size: 1.3em !important;
-      }
+  		<style>
+				.contents {
+						font-size: 1.2rem;
+						line-height: 1.6;
+				}
 
-      .conception-text{
-        font-size: 1.3em !important;
-      }
+				.color-code {
+						font-size: 1.1rem;
+						padding-left: 2rem;
+				}
 
-      .video-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 2em;
-        height: auto;
-        margin-bottom: 2em;
-        }
-      iframe {
-          max-width: 100%;
-          height: 315px;
-          border: none;
-        }
+				.student-profile {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: center;
+						gap: 20px;
+				}
 
-        @media screen and (max-width: 1000px) {
-          h4 {
-            text-align: left;
-            margin-top: 2em;
-          }
+		.student-profile .profile-box {
+				flex: 1 1 calc(25% - 20px);
+				max-width: 300px;
+				background-color: #f4f4f4;
+				border: 1px solid #ccc;
+				border-radius: 10px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				transition: transform 0.3s;
+			}
 
-          .core-values{
-            font-size: 4em !important;
-          }
+				.student-profile .profile-box img {
+						width: 100%; 
+						height: auto; 
+						border-radius: 10%; 
+				}
 
-          .conception-text{
-            font-size: 4em !important;
-          }
-        }
-    </style>
+
+				.student-profile .profile-box:hover {
+						transform: scale(1.05);
+				}
+
+				@media (max-width: 768px) {
+						.student-profile .profile-box {
+								flex: 1 1 calc(50% - 10px); 
+						}
+				}
+
+				@media (max-width: 480px) {
+						.student-profile .profile-box {
+								flex: 1 1 100%;
+						}
+				}
+
+
+			@media screen and (max-width: 1000px) {
+				#projects-heading h1 {
+					font-size: 3.1em;
+					margin-top: 0 !important;
+				}
+
+				#projects-heading {
+					margin-bottom: 1em !important;
+				}
+
+				.year-tabs {
+					padding: 10px;
+				}
+
+				#tab-buttons {
+					display: block;
+					justify-content: center;
+				}
+
+				#tab-buttons a {
+					font-size: 1.2rem;
+					margin: 5px 0;
+					width: 100%;
+					text-align: center;
+				}
+
+			.contents{
+					font-size: 2em !important;
+				}
+
+			.color-code{
+				font-size: 2em !important;
+				padding-left: 3em !important;
+			}
+			}
+		</style>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-961ZW8JP0Y"></script>
@@ -86,112 +137,85 @@
           <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
         </a>
           <ul class="main-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./trust-financials.html">Trust Financials</a></li>
-            <li><a href="./project.html">Projects</a></li>
-            <li><a href="./donation.html">Donation</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./events.html">Events</a></li>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./about.html">About Us</a></li>
+			<li><a href="./trust-financials.html">Trust Financials</a></li>
+			<li><a href="./project.html">Projects</a></li>
+			<li><a href="./donation.html">Donation</a></li>
+			<li><a href="./contact.html">Contact</a></li>
+			<li><a href="./events.html">Events</a></li>
           </ul>
         </header> 
     
-    <!-- Add your site or application content here -->
+      <!-- Add your site or application content here -->
+ 
     
-    <!-- About us Page -->
-<div class="about-us">
-	<div class="container">
-		<div id="heading">
-			<h3>About Us</h3>
-		</div>
+    <!-- Asset foundations- Our work page -->
+<div id="projects-heading">
+	<div id="heading-verticalalign">
+		<h1>Meet Our Students</h1>
+		<hr align="center">
+	</div>
+</div>
 
-		<div class="content">
-			<h4 class="conception-text">Conception:</h4>
-			<p><span style="font-size:38px">T</span>he successful completion of the Golden Jubilee Celebration of the 1965 batch  of Sir. M. Ct. M. High School,Purasawakkam, Chennai – 600084, on December 26, 2015, started another discussion in a positive way.</p>
-			<p>At this age, if some 80 school mates could get together for the joyous occasion through the untiring efforts of a few of our former colleagues 50 years after they finished schooling together, what would stop in reuniting themselves for the common good of the society at large? The question was easily posed but not easily answered. To rephrase it another way, the old batch mates had more questions than answers. Would it be possible to start up an organization for doing service to the society when most in the group were on the wrong side of 60 in terms of age? Would this venture remain sustainable? Would it call for seed money to start up a non profitable organization? What would be the legal and compliance requirements? Who would do the leg work when it comes running about to get things done? How would the group get some of the mates who are overseas based, involved? How and who would the group pass the baton to carry out the functions of such an endeavour?  </p>
-			<div class="about-us-video">
-				<iframe width="640" height="360" src="https://www.youtube.com/embed/OVF4udmgVt4?rel=0" frameborder="0" allowfullscreen></iframe>
-			</div>	
-			<p>Although not many questions could be answered in a known positive way, the resolve still remained intact. Some of the associates provided the initial money to get an organization started. Some promised to do all physical help. Some professionals undertook to do the necessary in terms of legal compliance and registration matters. The group, however, had a firm belief that this could be started and could be kept afloat. With the realization and clear foresight that public involvement is extremely important, the mates resolved to float the education charity as a Public Charitable Trust under the Indian Trust Act, 1882. </p>
-			<p>With concerted efforts gaining momentum by the day, Assured Support for Student Education and Talent Foundation (A.S.S.E.T ) Trust was formed and registered at the Sub Registrar’s Office on March 10, 2016 with Registration Number 30/2016.</p>
-			
-			<h4 class="core-values">Core Values of A.S.S.E.T Foundation:</h4>
-			<h4>Integrity:</h4>
-        <ul style="margin-bottom: 2em;">
-          <li>It is the cornerstone empowering those associated with A.S.S.E.T Foundation to consider people equally without prejudice or favour.</li>
-          <li>Integrity in our context also means that those associated with A.S.S.E.T Foundation shall act professionally with honesty, consistency, and impartiality.</li>
-          <li>Associates of A.S.S.E.T Foundation shall take responsibility for situations showing leadership and courage.</li>
-          <li>Associates of A.S.S.E.T Foundation shall place public interest over personal interest.</li>		
-        </ul>
-			<h4>Service:</h4>
-        <ul style="margin-bottom: 2em;">
-          <li>A.S.S.E.T Foundation realizes that the service it renders is for the betterment and uplift of the less fortunate students who needs financial assistance.</li>
-          <li>A.S.S.E.T Foundation will be impartial in the selection process in providing financial assistance. Only deserving students based on stringent selection criteria shall be chosen for providing financial assistance.</li>  
-        </ul>
-			<h4>Trust:</h4>
-        <ul style="margin-bottom: 2em;">
-          <li>A.S.S.E.T Foundation shall build relationship with donors and volunteers based on mutual respect.</li>
-          <li>A.S.S.E.T Foundation shall uphold law, institutions of Government, and democratic principles.</li>
-          <li>A.S.S.E.T Foundation shall communicate intentions clearly to all stakeholders, and shall work on collaborative basis all the time.</li>
-        </ul>
-			<h4>Accountability:</h4>
-        <ul style="margin-bottom: 2em;">
-          <li>A.S.S.E.T Foundation shall be fiscally responsible and focus on efficient,effective, and prudent use of resources.</li>
-          <li>A.S.S.E.T Foundation shall ensure that the administrative cost of running the charitable trust is kept to the minimum  of the overall donations collected in any fiscal year.</li>  
-        </ul>
-			<h4>Humility:</h4>
-        <ul style="margin-bottom: 2em;">
-          <li>A.S.S.E.T Foundation associates when required, shall  reach out to the learned, experienced, and philanthropic people for help.</li>
-        </ul>
-			<h4>Objectives of A.S.S.E.T Foundation:</h4> 
-			<ul>
-			<li>To award scholarships or maintenance allowances, tenable at any  educational establishments, as approved by the Board of Trustees to persons who are in need of financial suppport.</li>
+<div class="year-tabs">
+<!-- <ul class="nav nav-tabs">
+	<li class="active"><a href="#tab6" data-toggle="tab">2021</a></li>
+	<li><a href="#tab5" data-toggle="tab">2020</a></li>
+	<li><a href="#tab4" data-toggle="tab">2019</a></li>
+	<li><a href="#tab1" data-toggle="tab">2018</a></li>
+	<li><a href="#tab2" data-toggle="tab">2017</a></li>
+	<li><a href="#tab3" data-toggle="tab">2016</a></li>
+</ul> -->
+<div class="nav nav-tabs tab" id="tab-buttons"></div>
+<div class="tab-content" id="tab-contents"></div>
 
-			<li>To assist poor students by conducting or arrange to conduct special classes focused on their subjects, soft skills etc., that will enhance their capability and improve their attitude to venture “startups” at a later date.</li>
 
-			<li>To offer General, Industrial, Technical, Vocational training for the advancement of Education.</li>
-			<li>To organize events such as exhibitions, seminars, lectures, games, sports, entertainment programs of any kind and to release/publish/print souvenirs, pamphlets, books, literature, audio visual aids and the like for the purpose of raising funds for augmenting the resources of the trust , If trust deed is amended .</li>
-			<li>To undertake any other activity incidental to the above activities but which are not inconsistent with the above objects.</li>
-			<li>To provide monetary assistance and other relief work in case of natural calamities.</li>
-			</ul>
-			<br>
-			<h4>Our Vision Statement:</h4>
-      <ul style="margin-bottom: 2em;">
-        <li>We envision to help a great number of needy students in their pursuit of higher education and to become one of the top educational charitable organizations in India.</li>			
-      </ul>
-			<h4>Our Mission Statement:</h4>
-      <ul style="margin-bottom: 2em;">
-        <li>To Educate and Elevate needy students through higher education and skill development.</li>
-      </ul>
-				<h4>Our Logo</h4>
-					<img style="width: 20%;float: right;padding-left:8px;" src="./img/FINAL logo-compressed.png" alt="" />
-          <ul style="margin-bottom: 2em;">
-            <li>Our Logo signifies the purpose of our mission.</li>
-            <li>The Globe in the logo indicates that the support will extend to students for global education. Quality, of course, will be the key.</li>
-            <li>The donors and patrons are represented by a matured person leading and holding the aspirant and showing the star in the sky, meaning the student should dream big.</li>
-            <li>The two birds- falcons flying soaring heights symbolize flying spirits of student as well as A.S.S.E.T Foundation.</li>
-            <li>The graduating student is indicated by the book and the convocation hat on top of the Letter A.</li>  
-          </ul>
-			<br>
-			
-			<h4>Our success story in 2016:</h4>
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pEnEbYex0Ig?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-			<p>As soon as the trust was registered, a desire was expressed by all that it should start funding the educational needs of under privileged, meritorious, but monetarily challenged school finalists so that they could continue with their higher education. Accordingly, three students were chosen who met with the rigorous selection criteria set forth by the selection committee for awarding the scholarship. The Trustees are glad to report that A.S.S.E.T Foundation has been able to do it within three months of forming the trust, thanks to the generous contribution of the  well-wishers.</p>			
-			<h4>The Road ahead:</h4>
-				<p>The Trustees are cognizant that:</p>
-				<ol>
-					<li>A.S.S.E.T Foundation needs to be run by philanthropic minded people to stay afloat and carry on the objectives of the Trust in the foreseeable future.</li>
-					<li>Public support – both financial and non-financial related- is extremely important for furtherance of the objectives.</li>
-				</ol>
-				<p>Thus the need of public involvement and contribution as well as voluntary service to carry out our vision cannot be over emphasized.</p>
-		</div>
-	</div>	
+</div>
+
 </div>
 
 
-      
+
+<br><br>
+<div class="container">		
+<div id=student-description>
+	<div class="row">
+		<div class="col-md-8">
+			<p class="contents">For A.S.S.E.T Foundation, every student we sponsor in a year is a project initiated during that year. This is because, the course that the student is being sponsored may extend beyond the current fiscal year. Thus an Engineering Course that is to run for 4 years for A.S.S.E.T Foundation is a project that will run for 4 years. A Medical course that runs for 5 years, will for A.S.S.E.T Foundation a project that will run for 5 years</p>
+			<br/>
+			<p class="contents">Stringent selection criteria are applied in the candidate selection for scholarship award purpose. For more information on the selection criteria please <a href="http://localhost/asset/index.php/selection-criteria/" target='_blank'>click here</a>.</p>
+			<br/>
+			<p class="contents">After the selection of students, an agreement is entered with the parents/guardian of the students, that A.S.S.E.T Foundation will be monitoring the progress/continued interest of the students in their respective chosen courses.</p>
+		</div>
+		<div class="col-md-4">
+			<div class="legend-box">
+				<div class="legend-box-wrapper">
+					<h4>Legend</h4>
+					<p><span style="padding-right: 1em;margin-right: 1em;background-color:#008000;">&nbsp;</span>Green  - Completed Project</p>
+					<p><span style="padding-right: 1em;margin-right: 1em;background-color:#FFA500">&nbsp;</span>Orange - In Progress Project</p>
+					<p><span style="padding-right: 1em;margin-right: 1em;background-color:#FF0000">&nbsp;</span>Red - Discontinued Project</p>
+				</div>
+			</div>
+		</div>
+	</div>	<!--End of Row-->
+	<br/>
+	<p class="contents">A.S.S.E.T Foundation will ensure that the students’ performances are checked with the counselors at the respective educational institutions, and a brief report is updated in the project folder. </p>
+	<br/>
+	<p class="contents">All projects that are started in a particular fiscal year will be kept under that particular fiscal year folder. Each project file will be updated periodically. A colour code will be applied to the project folders thus:</p>
+	<br/>
+	<ul class="color-code">
+		<li>When the Project is in force, the colour of the project folder will be in Amber, or Orange colour.</li>
+		<li>When the Project is completed, the colour of the project folder will be in Green colour.</li>
+		<li>When the Project is terminated owing to reasons beyond the control of A.S.S.E.T Foundation, for example, owing to the non-satisfactory performance/termination of the student, or an event that is outside of the control of the student, the Project folder will be Red colour.</li>
+		<li>When at least one of the Projects under a fiscal year folder is in Orange colour, the main year folder will be in Orange colour. Thus a four year Engineering course project started in fiscal year 2013, will remain in Orange colour until completion of the course by the student in 2020.</li>
+		<li>When all Project folders are coloured Green, or all but one of the Projects are in Green and only one is in Red colour, the Fiscal year folder will be coloured Green.</li>
+	</ul>	 
+</div>
+</div>	
+
+
+
 <!--------------------------------------------------------------
 # Footer
 ---------------------------------------------------------------->
@@ -201,20 +225,20 @@
       <div class="content1">
           <address>
           <h3>A.S.S.E.T Foundation</h3>
-          6/17, Trust Square Street, <br>
-          Ramalingapuram,<br>
-          Chennai – 600012, India.<br>
+		  6/17, Trust Square Street, <br>
+		  Ramalingapuram,<br>
+		  Chennai – 600012, India.<br>
           <abbr title="Phone">Ph:</abbr> (044)2645-4939. <br>
           <abbr title="Phone">Mobile:</abbr> +91-9884256088.<br>
           E-Mail :<a style="color:#FFEB3B;margin-left: 0%;" href="mailto:assetfdn@gmail.com"> assetfdn@gmail.com</a>			  
           </address>
         <p>	
-          <a href="./about.html">About Us</a>
-          <a href="./donation.html">Donate</a>
-          <a href="./project.html">Projects</a>
-          <a href="./trust-financials.html">Financials</a>
-          <a href="./contact.html">Contact Us</a>
-          <a href="./events.html">Events</a>
+			<a href="./about.html">About Us</a>
+			<a href="./donation.html">Donate</a>
+			<a href="./project.html">Projects</a>
+			<a href="./trust-financials.html">Financials</a>
+			<a href="./contact.html">Contact Us</a>
+			<a href="./events.html">Events</a>
         </p>
       </div>        
     </div>
@@ -240,11 +264,116 @@
 # Footer - end
 ---------------------------------------------------------------->
 
-
       <!-- Bootstrap 5 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+	
+	<script>
+			const years = [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016];
+			function createTabs(years) {
+					const tabButtons = years
+							.map((year, index) => `
+									<button class="tablinks" onclick="openYear(event, '${year}')" ${index === 0 ? 'id="defaultOpen"' : ''}>
+											${year}
+									</button>
+							`)
+							.join('');
+					document.getElementById('tab-buttons').innerHTML = tabButtons;
+			}
+	
+			function createTabContents(years) {
+					const tabContents = years
+							.map(year => `
+									<div id="${year}" class="tabcontent">
+											<div class="our-work">
+													<div class="container">
+															<div class="student-info">
+																	<h2 style="margin-top: 1em;">Beneficiaries of ${year}</h2>
+																	<div class="row" id="students-${year}"></div>
+															</div>
+													</div>
+											</div>
+									</div>
+							`)
+							.join('');
+					document.getElementById('tab-contents').innerHTML = tabContents;
+			}
+		
+		function renderStudents(students, containerId) {
+			const container = document.getElementById(containerId);
+			container.innerHTML = students
+					.map(student => {
+							let borderColor = 'gray'; 
+
+							switch (student.projectStatus) {
+									case 'Completed':
+											borderColor = 'green';
+											break;
+									case 'In Progress':
+											borderColor = 'orange';
+											break;
+									case 'Discontinued':
+											borderColor = 'red';
+											break;
+							}
+
+							return `
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="student-card-wrapper">
+                        <div class="student-profile">
+                            <div class="profile-box">
+                                <div class="student-img" style="border: 2px solid ${borderColor};">
+                                    <img src="${student.image}" alt="${student.name}" class="profile-image">
+                                </div>
+                                <div class="student-name">
+                                    <h4>${student.name}</h4>
+                                    <h5>${student.course}</h5>
+                                    <h5>${student.college}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+					})
+					.join('');
+			}		
+
+			fetch('./data/students-list.json')
+					.then(response => response.json())
+					.then(data => {
+							years.forEach(year => {
+									const studentsKey = `students${year}`;
+									if (data[studentsKey]) {
+											renderStudents(data[studentsKey], `students-${year}`);
+									}
+							});
+					})
+					.catch(err => console.error('Error loading student data:', err));
+	
+			createTabs(years);
+			createTabContents(years);
+	
+			function openYear(evt, year) {
+					const tabcontents = document.getElementsByClassName('tabcontent');
+					for (let content of tabcontents) {
+							content.style.display = 'none';
+					}
+	
+					const tablinks = document.getElementsByClassName('tablinks');
+					for (let link of tablinks) {
+							link.className = link.className.replace(' active', '');
+					}
+	
+					document.getElementById(year).style.display = 'block';
+					evt.currentTarget.className += ' active';
+			}
+	
+			document.getElementById('defaultOpen').click();
+	</script>
+	
+
 </body>
 </html>
