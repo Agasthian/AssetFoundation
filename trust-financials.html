@@ -29,6 +29,132 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <!-- Main Style.css -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .financials .trustee-details {
+        margin-top: 2em;
+        overflow-x: auto; 
+      }
+
+      .content p {
+        font-size: large !important;"
+      }
+
+      .financials .trustee-details table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        table-layout: auto; 
+      }
+
+      .financials .trustee-details th,
+      .financials .trustee-details td {
+        padding: 0.8em;
+        font-size: 1em;
+        border: 0.1em solid #ddd;
+        white-space: nowrap;
+      }
+
+      .financials .trustee-details th {
+        background-color: #f1f1f1;
+        color: #333;
+      }
+
+      .financials .trustee-details td img.trustee {
+        max-width: 15em;
+        height: auto;
+        border-radius: 0.5em;
+        box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.1);
+      }
+
+      .financials .trustee-details tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      .financials .trustee-details tbody tr:nth-child(odd) {
+        background-color: #fff;
+      }
+
+      .para-title{
+        margin-top: 2em;
+        font-weight: bolder;
+      }
+
+      .auditor_addr {
+        margin-top: 1.6em;
+        font-size: 1.2em !important;
+      }
+
+      tr {
+        font-weight:500;
+        font-size: large;
+      }
+
+      @media (max-width: 1000px) {
+        .financials .trustee-details table {
+          display: block; 
+          overflow-x: auto; 
+          width: 100%; 
+          white-space: nowrap;
+        }
+
+        tr {
+          font-size: 1em;
+        }
+
+        .financials .trustee-details th,
+        .financials .trustee-details td {
+          font-size: 4em;
+          margin-left: 1.8em;
+        }
+
+        .financials .trustee-details td img.trustee {
+          max-width: 20em;
+        }
+
+        .financials .trustee-details tr {
+          display: block;
+          margin-bottom: 6em;
+        }
+
+        .financials .trustee-details th {
+          display: none !important;
+        }
+
+        .financials .trustee-details th,
+        .financials .trustee-details td {
+          display: block; 
+          text-align: center;
+        }
+
+        .auditor_img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .para-title{
+          text-align: left;
+          padding-left: 0.6em;
+          font-size: 3.1em;
+          margin-bottom: 0.6em;
+        }
+
+        .content p {
+          padding-left: 0.6em;
+        }
+
+        .trust-info{
+          font-size: 4.6em;
+          margin-bottom: 0 !important;
+          margin-top: 1em;
+        }
+
+        .auditor_addr{
+          margin-top: 1em;
+        }
+
+}
+
+    </style>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-961ZW8JP0Y"></script>
@@ -61,24 +187,24 @@
       <div class="financials">
         <div class="container">
           <div id="heading">
-            <h3>Trust Financials</h3>
+            <h3 style="font-size: xx-large;font-weight: bolder;">Trust Financials</h3>
           </div>
-          <div class="content">
-            <ul>
-              <li>A.S.S.E.T Foundation fiscal year ends on March 31 of each Calendar year.</li>
+          <div class="content" >
+            <ul style="font-size: large !important;padding-left: 2em;padding-right: 2em;">
+              <li >A.S.S.E.T Foundation fiscal year ends on March 31 of each Calendar year.</li>
               <li> Income Tax Department for Tax Concession for Donors -  <a href="./img/2022/12/80g.jpg" target="_blank">Approval of 80G(5)(vi) of the Income Tax Act, 1961.</a> </li>
               <li> Income Tax Dept Order for tax exemption for the trust - <a href="./img/2022/12/12aa.jpg" target="_blank">Aproval of 12AA of the Income-Tax Act, 1961.</a>
               </li>
             </ul>
-              <div class="row">
-                <div class="col-md-6">
-                  <p><span style="font-weight:600;">Auditors of the Trust:</span><br>
+              <div class="row" style="padding-left: 2em;padding-right: 2em;">
+                <div class="col-md-6" >
+                  <p class="auditor_addr"><span style="font-weight:bolder !important;">Auditors of the Trust:</span><br>
                     M/s P.B. Vijayaraghavan & Associates <br>
                     Address: New No.51, Giri Road,<br> 
                     T. Nagar, Chennai 600 017</p>    
                 </div>
-                <div class="col-md-6">
-                  <a href="./img/2022/12/Vijaya-Aud.jpg" target="_blank" >
+                <div class="col-md-6" style="margin-top: 3em;">
+                  <a href="./img/2022/12/Vijaya-Aud.jpg" target="_blank" class="auditor_img">
                     <img id="auditor" src="./img/2022/12/Vijaya-Aud.jpg" alt="">
                   </a>
                 </div>
@@ -86,9 +212,9 @@
             
               
             
-            <h4>Internal Audit of Trust Financial Matters:</h4>
+            <h2 class="para-title">Internal Audit of Trust Financial Matters:</h2>
             <p>The Board of Trustees shall at their discretion appoint a committee of members from the list of regular donors and patrons, to scrutinize the Trust financial records and report to them of their findings. Such committees could be asked to conduct scrutiny at least once a year, and at a maximum four times in a fiscal year. A.S.S.E.T Foundation lays an emphasis on financial discipline, such audit shall be also to ensure that the administrative costs are managed within the stipulated percentage of collection of yearly funds.</p>
-            <h4>Financial records</h4>
+            <h2 class="para-title">Financial records:</h2>
             <!--<p>Completed fiscal year records will be available at the Registered Office of A.S.S.E.T Foundation and shall be made available for inspection by Donors, Patrons, and Well-wishers.</p>-->
             <p>Board of Trustees of A.S.S.E.T Foundation are happy to report that even in the first year after registering as a Trust, many donors and well-wishers came forward to support the noble cause undertaken by the Trust. As a result,A.S.S.E.T Foundation has been able to select three school top ranking students and to finance their higher educational financial needs.</p>
             <p>But, much needs to be accomplished with respect to mobilization of funds. Our objectives are lofty but financial resources and availability of funds are very limited. Munificent donations are solicited from well-wishers   as well as public who would like to participate in the noble mission of the Trust to help deserving students under the aegis of our “Educate and Elevate” objective.</p>
@@ -99,12 +225,11 @@
           
 
             <!-- Trustee details -->
-            <h4>Trustee Info</h4>
+            <h2 class="para-title trust-info">Trustee Info</h2>
             <div class="table-responsive trustee-details">
-              <table class="table">
+              <table>
                 <thead class="table-light">
                   <tr>
-                    <th scope="col">#</th>
                     <th scope="col">Name</th>
                     <th scope="col">Designation</th>
                     <th scope="col">Photo</th>
@@ -112,49 +237,41 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
                     <td>B.Rangarajan</td>
                     <td>Trustee / Managing Trustee</td>
                     <td><img class="trustee" src="./img/trustees/5-Rengarajan.JPG" alt="trustee"></td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>C.Anand Kuamar</td>
                     <td>Trustee / Secretry</td>
                     <td><img class="trustee" src="./img/trustees/7-C_AnanthaKumar.jpg" alt="trustee"></td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
                     <td>PS Ramachandran</td>
                     <td>Trustee / Treasurer</td>
                     <td><img class="trustee" src="./img/trustees/10-P.S.Ramachandaran.JPG" alt="trustee"></td>
                   </tr>
                   <tr>
-                    <th scope="row">4</th>
                     <td>Lakshmanan T</td>
                     <td>Trustee /Co-ordinator</td>
                     <td><img class="trustee" src="./img/trustees/2-Lakshmanan.jpeg" alt="trustee"></td>
                   </tr>
                   <tr>
-                    <th scope="row">5</th>
                     <td>Syed Ibrahim</td>
                     <td>Trustee</td>
                     <td><img class="trustee" src="./img/trustees/1-SyedIbrahim.JPG" alt="trustee"></td>
                   </tr>
                   <tr>
-                    <th scope="row">6</th>
                     <td>R.AnathKrishnan</td>
                     <td>Trustee</td>
                     <td><img class="trustee" src="./img/trustees/11-R.AnathKrishnan.JPG" alt="trustee"></td>
                   </tr>
                   <tr>
-                    <th scope="row">7</th>
                     <td>T.C.Alagar Raja</td>
                     <td>Trustee</td>
                     <td><img class="trustee" src="./img/trustees/8-T.C.Alagar Raja.jpg" alt="trustee"></td>
                   </tr>
                   <tr>
-                    <th scope="row">8</th>
                     <td>N.Ramesh</td>
                     <td>Trustee</td>
                     <td><img class="trustee" src="./img/trustees/9-N.Ramesh.jpg" alt="trustee"></td>
