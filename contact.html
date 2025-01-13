@@ -29,6 +29,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <!-- Main Style.css -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .donate_now_title{
+          margin-bottom: 0.1em;
+        }
+
+        .donationform-title{
+          font-size: x-large;
+        }
+      @media screen and (max-width: 1000px) {
+        .donationform {
+          font-size: medium;
+        }
+
+        .donationform-title{
+          font-size: larger !important;
+          text-align: left !important;
+        }
+
+        .video-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin-top: 2em;
+          height: auto;
+          margin-bottom: 2em;
+        }
+      iframe {
+          max-width: 100%;
+          height: 315px;
+          border: none;
+        }
+
+        .donate_now_title{
+          margin-top: 0.5em;
+          font-size: x-large !important;
+          text-align: center !important;
+        }
+
+
+      }
+    </style>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-961ZW8JP0Y"></script>
@@ -58,36 +100,59 @@
       <!-- Add your site or application content here -->
     
 
-      <!-- Asset foundations- contact us page -->
+      <!-- Asset foundations- Donation us page -->
+<!-- Donation Form Page -->
+<div class="donationform">
+	<div class="container">
+		<div id="heading">
+			<h3 class="donationform-title" style="margin-bottom: 2em;">How Can you be a Donor?</h3>
+		</div>
+		<div class="content">
+			<p>A.S.S.E.T Foundation needs your monetary support to help the needy students. You may please:</p>	
+				<ul>
+					<li>Donate lumpsum  payment for at least one student for the course, or</li>
+					<li>Donate periodical amounts, yearly, quarterly, monthly as per your choice, again with a view to helping the cause of at least one needy student through his/her entire higher education, or</li>
+					<li>Donate based on a certain event every year, it may be in remembrance of a certain respected family member, or friend, or your or any one else’s birthday, or whatever the reason you may want to contribute, again the contribution being utilized for helping to educate needy student/s.</li>
+					<li>Donate whatever you can and whenever you can again with the purpose to help a needy student.</li>
+				</ul>	
+		</div>
+		<div class="container">
+			<div id="heading">
+				<h3 class="donationform-title" style="margin-bottom: 1.5em;text-align: left;">Our Donor Speech</h3>
+			</div>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FhuEKIzyFZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>  
+		</div>		
+		
+		<div id="heading">
+			<h3 class="donate_now_title" style="margin-top: 3em;margin-bottom: 1em;">Donate Now</h3>
+		</div>
+		<div class="content">
+		<h3 class="donate_now_title">Yes, I want to Support a Student!</h3>
+				<h4 style="margin-top: 2em;font-size: x-large;text-align: center;font-weight: bolder;margin-bottom: 1.5em;">Payment/Fund Transfer Options </h4>
+				<ol>
+					<li>Please send your contribution and donations by crossed cheque or demand draft drawn in favour of  <span style="color: #2196F3;font-family: Montserrat;">“A.S.S.E.T Foundation”, and mail it to <br>
+          6/17, Trust Street Square, <br>
+          Ramalingapuram <br/>
+					Chennai – 600012, India.</span></li><br>
 
-      <div class="contact">
-        <div class="container">
-          <div id="heading">
-            <h3>Contact Us</h3>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h4>Registered Office and Mailing Address :</h4>
-              <address>
-                A.S.S.E.T Foundation<br>
-                6/17, Trust Square Street, <br>
-                Ramalingapuram,<br>
-                Chennai – 600012, India.<br>
-                <abbr title="Phone">Ph:</abbr> (044)2645-4939. <br>
-                <abbr title="Phone">Mobile:</abbr> +91-9884256088.<br>
-                E-Mail : assetfdn@gmail.com.
-              </address>		
-                
-            </div>
-            <div class="col-md-6">
-              <div class="contact-img1 img-responsive ">
-                <img style="width: 40rem;" src="./img/contactus.png">	
-              </div>				
-            </div>
-          </div>
-
-        </div>
-      </div>	
+					<li>NEFT/ IMPS BANK TRANSFER TO<br/>
+					<span style="color: #2196F3;font-family: Montserrat;">
+            A.S.S.E.T FOUNDATION,<br/>
+            STATE BANK OF INDIA,<br/>
+            NUNGAMBAKKAM BRANCH,<br/>
+            CHENNAI - 600 034.<br/><br/>
+            CURRENT A/c No: 35729459140<br/>
+            IFSC:: SBIN0001176
+            </span>
+          </li>
+				</ol>
+				<p style="margin-top: 3em;">Foreign currency remittances NOT allowed. Transfers from NRI/ NRO accounts are NOT permitted.</p> 
+				<p>With regard to A & B above, receipt will be issued 72 hours of receipt of payment at the Trust Bank Account. </p>
+		</div>
+	</div>
+</div>	        
 
       
 <!--------------------------------------------------------------
@@ -99,7 +164,7 @@
       <div class="content1">
           <address>
           <h3>A.S.S.E.T Foundation</h3>
-            6/17, Trust Square Street,<br>
+            6/17, Trust Street Square, <br>
             Ramalingapuram,<br>
             Chennai – 600012, India.<br>
             <abbr title="Phone">Ph:</abbr> (044)2645-4939. <br>
