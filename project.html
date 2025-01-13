@@ -30,9 +30,69 @@
     <!-- Main Style.css -->
     <link rel="stylesheet" href="css/style.css">
   		<style>
-			@media screen and (max-width: 768px) {
+				.contents {
+						font-size: 1.2rem;
+						line-height: 1.6;
+				}
+
+				.color-code {
+						font-size: 1.1rem;
+						padding-left: 2rem;
+				}
+
+				.student-profile {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: center;
+						gap: 20px;
+				}
+
+		.student-profile .profile-box {
+				flex: 1 1 calc(25% - 20px);
+				max-width: 300px;
+				background-color: #f4f4f4;
+				border: 1px solid #ccc;
+				border-radius: 10px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				transition: transform 0.3s;
+			}
+
+				.student-profile .profile-box img {
+						width: 100%; 
+						height: auto; 
+						border-radius: 10%; 
+				}
+
+
+				.student-profile .profile-box:hover {
+						transform: scale(1.05);
+				}
+
+				@media (max-width: 768px) {
+						.student-profile .profile-box {
+								flex: 1 1 calc(50% - 10px); 
+						}
+				}
+
+				@media (max-width: 480px) {
+						.student-profile .profile-box {
+								flex: 1 1 100%;
+						}
+				}
+
+
+			@media screen and (max-width: 1000px) {
 				#projects-heading h1 {
-					font-size: 1.5rem;
+					font-size: 3.1em;
+					margin-top: 0 !important;
+				}
+
+				#projects-heading {
+					margin-bottom: 1em !important;
 				}
 
 				.year-tabs {
@@ -50,6 +110,15 @@
 					width: 100%;
 					text-align: center;
 				}
+
+			.contents{
+					font-size: 2em !important;
+				}
+
+			.color-code{
+				font-size: 2em !important;
+				padding-left: 3em !important;
+			}
 			}
 		</style>
 </head>
@@ -113,9 +182,11 @@
 <div id=student-description>
 	<div class="row">
 		<div class="col-md-8">
-			<p>For A.S.S.E.T Foundation, every student we sponsor in a year is a project initiated during that year. This is because, the course that the student is being sponsored may extend beyond the current fiscal year. Thus an Engineering Course that is to run for 4 years for A.S.S.E.T Foundation is a project that will run for 4 years. A Medical course that runs for 5 years, will for A.S.S.E.T Foundation a project that will run for 5 years</p>
-			<p>Stringent selection criteria are applied in the candidate selection for scholarship award purpose. For more information on the selection criteria please <a href="http://localhost/asset/index.php/selection-criteria/" target='_blank'>click here</a>.</p>
-			<p>After the selection of students, an agreement is entered with the parents/guardian of the students, that A.S.S.E.T Foundation will be monitoring the progress/continued interest of the students in their respective chosen courses.</p>
+			<p class="contents">For A.S.S.E.T Foundation, every student we sponsor in a year is a project initiated during that year. This is because, the course that the student is being sponsored may extend beyond the current fiscal year. Thus an Engineering Course that is to run for 4 years for A.S.S.E.T Foundation is a project that will run for 4 years. A Medical course that runs for 5 years, will for A.S.S.E.T Foundation a project that will run for 5 years</p>
+			<br/>
+			<p class="contents">Stringent selection criteria are applied in the candidate selection for scholarship award purpose. For more information on the selection criteria please <a href="http://localhost/asset/index.php/selection-criteria/" target='_blank'>click here</a>.</p>
+			<br/>
+			<p class="contents">After the selection of students, an agreement is entered with the parents/guardian of the students, that A.S.S.E.T Foundation will be monitoring the progress/continued interest of the students in their respective chosen courses.</p>
 		</div>
 		<div class="col-md-4">
 			<div class="legend-box">
@@ -128,9 +199,12 @@
 			</div>
 		</div>
 	</div>	<!--End of Row-->
-	<p>A.S.S.E.T Foundation will ensure that the students’ performances are checked with the counselors at the respective educational institutions, and a brief report is updated in the project folder. </p>
-	<p>All projects that are started in a particular fiscal year will be kept under that particular fiscal year folder. Each project file will be updated periodically. A colour code will be applied to the project folders thus:</p>
-	<ul>
+	<br/>
+	<p class="contents">A.S.S.E.T Foundation will ensure that the students’ performances are checked with the counselors at the respective educational institutions, and a brief report is updated in the project folder. </p>
+	<br/>
+	<p class="contents">All projects that are started in a particular fiscal year will be kept under that particular fiscal year folder. Each project file will be updated periodically. A colour code will be applied to the project folders thus:</p>
+	<br/>
+	<ul class="color-code">
 		<li>When the Project is in force, the colour of the project folder will be in Amber, or Orange colour.</li>
 		<li>When the Project is completed, the colour of the project folder will be in Green colour.</li>
 		<li>When the Project is terminated owing to reasons beyond the control of A.S.S.E.T Foundation, for example, owing to the non-satisfactory performance/termination of the student, or an event that is outside of the control of the student, the Project folder will be Red colour.</li>
@@ -216,7 +290,7 @@
 											<div class="our-work">
 													<div class="container">
 															<div class="student-info">
-																	<h3>Beneficiaries of ${year}</h3>
+																	<h2 style="margin-top: 1em;">Beneficiaries of ${year}</h2>
 																	<div class="row" id="students-${year}"></div>
 															</div>
 													</div>
@@ -248,9 +322,8 @@
 							return `
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="student-card-wrapper">
-                        <div class="student-card">
-                            <div class="student-content">
-                                <!-- Circular profile image with colored border -->
+                        <div class="student-profile">
+                            <div class="profile-box">
                                 <div class="student-img" style="border: 2px solid ${borderColor};">
                                     <img src="${student.image}" alt="${student.name}" class="profile-image">
                                 </div>
