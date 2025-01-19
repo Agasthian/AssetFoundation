@@ -32,11 +32,26 @@
     <style>
         .donate_now_title{
           margin-bottom: 0.1em;
+          font-size: x-large !important;
         }
 
         .donationform-title{
-          font-size: x-large;
+          font-size: x-large !important;
         }
+
+        .content{
+          font-size: medium;
+        }
+
+        .video-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 2em;
+          height: auto;
+          margin-bottom: 2em;
+        }
+
       @media screen and (max-width: 1000px) {
         .donationform {
           font-size: medium;
@@ -70,6 +85,63 @@
 
 
       }
+
+      .donate_now_title {
+    font-size: 1.8em;
+    text-align: center;
+    color: #4CAF50;
+    animation: fadeIn 2s ease-in-out;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.donate_now_title:hover {
+    transform: scale(1.1);
+    color: #2196F3;
+}
+
+    .donate-now-button {
+        display: block;
+        margin: 2em auto;
+        padding: 0.8em 2em;
+        font-size: 1.2em;
+        background: linear-gradient(45deg, #ec7878, #ea4a72);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        animation: bounce 1.5s infinite alternate;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .donate-now-button:hover {
+        background: linear-gradient(45deg, #ea4a72, #ec7878);
+        transform: scale(1.1);
+    }
+
+    ol {
+      font-size: large;
+    }
+
+      @keyframes fadeIn {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+
+      @keyframes bounce {
+          0% {
+              transform: translateY(0);
+          }
+          100% {
+              transform: translateY(-10px);
+          }
+      }
+
     </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -82,22 +154,24 @@
   gtag('config', 'G-961ZW8JP0Y');
 </script>
 <body>
-    <header class="header">
-        <a href="/">
-          <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
-        </a>
-          <ul class="main-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./trust-financials.html">Trust Financials</a></li>
-            <li><a href="./project.html">Projects</a></li>
-            <li><a href="./donation.html">Donation</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./events.html">Events</a></li>
-          </ul>
-        </header> 
-    
-      <!-- Add your site or application content here -->
+  <header class="header">
+    <a href="/" id="logo">
+      <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
+    </a>
+    <ul class="main-nav">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./trust-financials.html">Trust Financials</a></li>
+      <li><a href="./project.html">Projects</a></li>
+      <li><a href="./donation.html">Donation</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./events.html">Events</a></li>
+    </ul>
+    <a href="javascript:void(0);" id="logo1">
+      <img class="logo1" src="./img/nav-bar.png" alt="Asset Foundation Logo">
+    </a>
+  </header>
+        <!-- Add your site or application content here -->
     
 
       <!-- Asset foundations- Donation us page -->
@@ -125,31 +199,28 @@
       </div>  
 		</div>		
 		
-		<div id="heading">
-			<h3 class="donate_now_title" style="margin-top: 3em;margin-bottom: 1em;">Donate Now</h3>
-		</div>
-		<div class="content">
-		<h3 class="donate_now_title">Yes, I want to Support a Student!</h3>
-				<h4 style="margin-top: 2em;font-size: x-large;text-align: center;font-weight: bolder;margin-bottom: 1.5em;">Payment/Fund Transfer Options </h4>
-				<ol>
-					<li>Please send your contribution and donations by crossed cheque or demand draft drawn in favour of  <span style="color: #2196F3;font-family: Montserrat;">“A.S.S.E.T Foundation”, and mail it to <br>
-          6/17, Trust Street Square, <br>
-          Ramalingapuram <br/>
-					Chennai – 600012, India.</span></li><br>
+    <button class="donate-now-button"><span style="font-size: larger;">Donate Now <br> Yes, I want to Support a Student!</span></button>
+    <h4 id="payment-options" style="margin-top: 2em;font-size: x-large;text-align: center;font-weight: bolder;margin-bottom: 1.5em;">Payment/Fund Transfer Options </h4>
+    <ol>
+      <li>Please send your contribution and donations by crossed cheque or demand draft drawn in favour of  <span style="color: #2196F3;font-family: Montserrat;">“A.S.S.E.T Foundation”, and mail it to <br>
+      6/17, Trust Street Square, <br>
+      Ramalingapuram <br/>
+      Chennai – 600012, India.</span></li><br>
 
-					<li>NEFT/ IMPS BANK TRANSFER TO<br/>
-					<span style="color: #2196F3;font-family: Montserrat;">
-            A.S.S.E.T FOUNDATION,<br/>
-            STATE BANK OF INDIA,<br/>
-            NUNGAMBAKKAM BRANCH,<br/>
-            CHENNAI - 600 034.<br/><br/>
-            CURRENT A/c No: 35729459140<br/>
-            IFSC:: SBIN0001176
-            </span>
-          </li>
-				</ol>
-				<p style="margin-top: 3em;">Foreign currency remittances NOT allowed. Transfers from NRI/ NRO accounts are NOT permitted.</p> 
-				<p>With regard to A & B above, receipt will be issued 72 hours of receipt of payment at the Trust Bank Account. </p>
+      <li>NEFT/ IMPS BANK TRANSFER TO<br/>
+      <span style="color: #2196F3;font-family: Montserrat;">
+        A.S.S.E.T FOUNDATION,<br/>
+        STATE BANK OF INDIA,<br/>
+        NUNGAMBAKKAM BRANCH,<br/>
+        CHENNAI - 600 034.<br/><br/>
+        CURRENT A/c No: 35729459140<br/>
+        IFSC:: SBIN0001176
+        </span>
+      </li>
+    </ol> 
+
+    <p style="margin-top: 3em;font-size: larger;">Foreign currency remittances NOT allowed. Transfers from NRI/ NRO accounts are NOT permitted.</p> 
+    <p style="font-size: larger;">With regard to A & B above, receipt will be issued 72 hours of receipt of payment at the Trust Bank Account. </p>
 		</div>
 	</div>
 </div>	        
@@ -208,5 +279,32 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const donateNowButton = document.querySelector(".donate-now-button");
+        const paymentOptions = document.getElementById("payment-options");
+
+        donateNowButton.addEventListener("click", function () {
+          paymentOptions.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+
+        const logo = document.getElementById("logo1");
+        const header = document.querySelector(".header");
+        const mainNav = document.querySelector(".main-nav");
+        logo.addEventListener("click", function(event) {
+            event.preventDefault();
+            header.classList.toggle("show-nav");
+        });
+
+        document.addEventListener("click", function(event) {
+            if (!header.contains(event.target) && !mainNav.contains(event.target)) {
+                header.classList.remove("show-nav");
+            }
+        });
+    });
+
+  </script>
+
 </body>
 </html>
