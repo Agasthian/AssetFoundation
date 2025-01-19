@@ -36,7 +36,7 @@
       }
 
       .content p {
-        font-size: large !important;"
+        font-size: large !important;
       }
 
       .financials .trustee-details table {
@@ -89,6 +89,43 @@
         font-size: large;
       }
 
+      .trustee-section {
+      margin-top: 2em;
+    }
+
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .para-title {
+      font-size: 2em !important;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .trustee-details table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    .trustee-details th,
+    .trustee-details td {
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+    }
+
+    .trustee-details td img.trustee {
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+
+
       @media (max-width: 1000px) {
         .financials .trustee-details table {
           display: block; 
@@ -136,7 +173,7 @@
         .para-title{
           text-align: left;
           padding-left: 0.6em;
-          font-size: 3.1em;
+          font-size: 3.1em !important;
           margin-bottom: 0.6em;
         }
 
@@ -156,6 +193,52 @@
 
 }
 
+    @media (max-width: 1000px) {
+      .trustee-details table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .trustee-details thead {
+        display: none;
+      }
+
+      .trustee-details tbody {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .trustee-details tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+        width: 90%;
+        border-radius: 10px;
+        padding: 1rem;
+      }
+
+      .trustee-details td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem 0;
+      }
+
+      .trustee-details td img.trustee {
+        max-width: 200px;
+        height: auto;
+      }
+
+      .para-title {
+        font-size: 1.8rem;
+      }
+    }
+
     </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -168,21 +251,24 @@
   gtag('config', 'G-961ZW8JP0Y');
 </script>
 <body>
-    <header class="header">
-        <a href="/">
-          <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
-        </a>
-          <ul class="main-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./trust-financials.html">Trust Financials</a></li>
-            <li><a href="./project.html">Projects</a></li>
-            <li><a href="./donation.html">Donation</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./events.html">Events</a></li>
-          </ul>
-        </header> 
-    
+  <header class="header">
+    <a href="/" id="logo">
+      <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
+    </a>
+    <ul class="main-nav">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./trust-financials.html">Trust Financials</a></li>
+      <li><a href="./project.html">Projects</a></li>
+      <li><a href="./donation.html">Donation</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./events.html">Events</a></li>
+    </ul>
+    <a href="javascript:void(0);" id="logo1">
+      <img class="logo1" src="./img/nav-bar.png" alt="Asset Foundation Logo">
+    </a>
+  </header>
+      
       <!-- Add your site or application content here -->
 
       <!-- Trust Financials -->
@@ -200,7 +286,7 @@
             </ul>
               <div class="row" style="padding-left: 2em;padding-right: 2em;">
                 <div class="col-md-6" >
-                  <p class="auditor_addr"><span style="font-weight:bolder !important;">Auditors of the Trust:</span><br>
+                  <p class="auditor_addr"><span style="font-weight:bolder !important;">Auditors of the Trust</span><br>
                     M/s P.B. Vijayaraghavan & Associates <br>
                     Address: New No.51, Giri Road,<br> 
                     T. Nagar, Chennai 600 017</p>    
@@ -214,9 +300,9 @@
             
               
             
-            <h2 class="para-title">Internal Audit of Trust Financial Matters:</h2>
+            <h2 class="para-title">Internal Audit of Trust Financial Matters</h2>
             <p>The Board of Trustees shall at their discretion appoint a committee of members from the list of regular donors and patrons, to scrutinize the Trust financial records and report to them of their findings. Such committees could be asked to conduct scrutiny at least once a year, and at a maximum four times in a fiscal year. A.S.S.E.T Foundation lays an emphasis on financial discipline, such audit shall be also to ensure that the administrative costs are managed within the stipulated percentage of collection of yearly funds.</p>
-            <h2 class="para-title">Financial records:</h2>
+            <h2 class="para-title">Financial records</h2>
             <!--<p>Completed fiscal year records will be available at the Registered Office of A.S.S.E.T Foundation and shall be made available for inspection by Donors, Patrons, and Well-wishers.</p>-->
             <p>Board of Trustees of A.S.S.E.T Foundation are happy to report that even in the first year after registering as a Trust, many donors and well-wishers came forward to support the noble cause undertaken by the Trust. As a result,A.S.S.E.T Foundation has been able to select three school top ranking students and to finance their higher educational financial needs.</p>
             <p>But, much needs to be accomplished with respect to mobilization of funds. Our objectives are lofty but financial resources and availability of funds are very limited. Munificent donations are solicited from well-wishers   as well as public who would like to participate in the noble mission of the Trust to help deserving students under the aegis of our “Educate and Elevate” objective.</p>
@@ -225,9 +311,11 @@
             <p>The balance amount left after funding 85 % collected in each financial year will be carried over by A.S.S.E.T Foundation. The Board of Trustees shall invest the money and funds of the trust not immediately required in any one or more of the methods prescribed in section 11(5) of the income tax act 1961 as amended from time to time read with section 13(1) (d) of the income tax Act, 1961.</p>
             <p>It is one of the main purposes of the Trust that the Administrative expenses shall be kept to the barest minimum and maximum funding should be for the Trust’s “Educate and Elevate” objective.</p>
           
+            <h2 class="para-title trust-info">Trustee Info</h2>
+
+            <div class="trustee-section">
 
             <!-- Trustee details -->
-            <h2 class="para-title trust-info">Trustee Info</h2>
             <div class="table-responsive trustee-details">
               <table>
                 <thead class="table-light">
@@ -280,6 +368,7 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
             </div>
           </div><!-- End of content -->
         </div>
@@ -342,5 +431,23 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const logo = document.getElementById("logo1");
+        const header = document.querySelector(".header");
+        const mainNav = document.querySelector(".main-nav");
+        logo.addEventListener("click", function(event) {
+            event.preventDefault();
+            header.classList.toggle("show-nav");
+        });
+
+        document.addEventListener("click", function(event) {
+            if (!header.contains(event.target) && !mainNav.contains(event.target)) {
+                header.classList.remove("show-nav");
+            }
+        });
+    });
+  </script>
+
 </body>
 </html>
