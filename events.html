@@ -28,12 +28,19 @@
       object-fit: cover;
     }
 
+    .card-title {
+      font-size: medium;
+    }
+
+    .card-text{
+      font-size: small;
+    }
   </style>
 </head>
 
 <body>
   <header class="header">
-    <a href="/">
+    <a href="/" id="logo">
       <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
     </a>
     <ul class="main-nav">
@@ -45,8 +52,11 @@
       <li><a href="./contact.html">Contact</a></li>
       <li><a href="./events.html">Events</a></li>
     </ul>
+    <a href="javascript:void(0);" id="logo1">
+      <img class="logo1" src="./img/nav-bar.png" alt="Asset Foundation Logo">
+    </a>
   </header>
-
+  
   <div class="container my-5">
     <h1 class="text-center mb-4">Our Events</h1>
     <div class="row">
@@ -124,6 +134,23 @@
       ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const logo = document.getElementById("logo1");
+        const header = document.querySelector(".header");
+        const mainNav = document.querySelector(".main-nav");
+        logo.addEventListener("click", function(event) {
+            event.preventDefault();
+            header.classList.toggle("show-nav");
+        });
+
+        document.addEventListener("click", function(event) {
+            if (!header.contains(event.target) && !mainNav.contains(event.target)) {
+                header.classList.remove("show-nav");
+            }
+        });
+    });
+    </script>
   
 </body>
 
