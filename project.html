@@ -31,12 +31,12 @@
     <link rel="stylesheet" href="css/style.css">
   		<style>
 				.contents {
-						font-size: 1.2rem;
-						line-height: 1.6;
+					font-size: large !important;
+					line-height: 1.6;
 				}
 
 				.color-code {
-						font-size: 1.1rem;
+						font-size: large;
 						padding-left: 2rem;
 				}
 
@@ -132,21 +132,24 @@
   gtag('config', 'G-961ZW8JP0Y');
 </script>
 <body>
-    <header class="header">
-        <a href="/">
-          <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
-        </a>
-          <ul class="main-nav">
-			<li><a href="./index.html">Home</a></li>
-			<li><a href="./about.html">About Us</a></li>
-			<li><a href="./trust-financials.html">Trust Financials</a></li>
-			<li><a href="./project.html">Projects</a></li>
-			<li><a href="./donation.html">Donation</a></li>
-			<li><a href="./contact.html">Contact</a></li>
-			<li><a href="./events.html">Events</a></li>
-          </ul>
-        </header> 
-    
+  <header class="header">
+    <a href="/" id="logo">
+      <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
+    </a>
+    <ul class="main-nav">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./trust-financials.html">Trust Financials</a></li>
+      <li><a href="./project.html">Projects</a></li>
+      <li><a href="./donation.html">Donation</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./events.html">Events</a></li>
+    </ul>
+    <a href="javascript:void(0);" id="logo1">
+      <img class="logo1" src="./img/nav-bar.png" alt="Asset Foundation Logo">
+    </a>
+  </header>
+			
       <!-- Add your site or application content here -->
  
     
@@ -372,7 +375,25 @@
 			}
 	
 			document.getElementById('defaultOpen').click();
+			
 	</script>
+	  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const logo = document.getElementById("logo1");
+        const header = document.querySelector(".header");
+        const mainNav = document.querySelector(".main-nav");
+        logo.addEventListener("click", function(event) {
+            event.preventDefault();
+            header.classList.toggle("show-nav");
+        });
+
+        document.addEventListener("click", function(event) {
+            if (!header.contains(event.target) && !mainNav.contains(event.target)) {
+                header.classList.remove("show-nav");
+            }
+        });
+    });
+		</script>
 	
 
 </body>
