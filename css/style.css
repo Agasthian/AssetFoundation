@@ -1109,7 +1109,7 @@ p:empty {
     transition: right 0.4s ease, opacity 0.4s ease;
     border-radius: 15px;
     opacity: 0; 
-    background: linear-gradient(135deg, #900434, #bc3a4c);
+    /* background: linear-gradient(135deg, #900434, #bc3a4c); */
   }
   
   .main-nav.show-nav {
