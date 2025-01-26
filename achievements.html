@@ -34,6 +34,7 @@
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
+      border-radius: 1em;
     }
 
     .event-card:hover {
@@ -95,6 +96,13 @@
     .card-text {
       font-size: medium;
       text-align: center;
+    }
+
+    @media (max-width: 1000px) {
+      .event-card{
+        margin: 3em !important;
+        border-radius: 3em;
+      }
     }
   </style>
 
