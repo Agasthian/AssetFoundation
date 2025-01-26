@@ -1,0 +1,274 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.main-content {
+  margin: 2em 0;
+}
+
+#meeting-title {
+  margin-top: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 1em;
+}
+
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+}
+
+.main-image {
+  flex: 1 1 40%;
+  max-width: 40%;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+  box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
+}
+
+.event-text {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.event-contents {
+  font-size: large;
+  line-height: 1.8em;
+  margin-left: 2em;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 2em;
+  overflow-x: auto;
+  padding: 1em 0;
+}
+
+.photo-gallery img {
+  width: 100%;
+  max-width: 400px;
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 0.5em;
+  box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  max-width: 50%;
+  max-height: 80%;
+  border-radius: 0.5em;
+}
+
+.modal img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.center-container {
+  margin-left: 13em;
+  margin-top: 6em;
+  margin-bottom: 3em;
+  font-style: italic;
+  max-width: 120em;
+
+}
+
+
+.center-container h2 {
+  font-size: x-large;
+  color: #333;
+  margin-bottom: 20px;
+
+}
+
+.center-container p {
+  font-size: large;
+  line-height: 1.8em;
+  color: #555;
+  margin: 0 auto;
+
+}
+
+.center-container {
+max-width: 80%; 
+margin: 0 auto;
+padding: 20px;
+text-align: center;
+background-color: #f4f4f4; 
+border-radius: 8px; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.center-container h2 {
+font-size: 2em; 
+margin-bottom: 15px;}
+
+.center-container p {
+font-size: 1.2em; 
+line-height: 1.6em; 
+color: #333; 
+}
+
+@media (max-width: 1700px) {
+
+  .center-container {
+    margin-top: 1em;
+    font-size: xx-larger !important;
+    max-width: 95%; 
+    margin-left: auto; 
+    margin-right: auto;
+    }
+
+  .center-container h2 {
+    font-size: x-large !important;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 3em;
+
+  }
+
+  .center-container p {
+      font-size: large;
+      line-height: 1.8em;
+      margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .event-details {
+    flex-direction: column;
+  }
+
+  .main-image, .event-text {
+    max-width: 100%;
+  }
+
+  #meeting-title{
+    font-size: x-large !important;
+  }
+
+  .event-text{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .event-contents{
+    margin-left: 0;
+  }
+}
+
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navigation-buttons a {
+  font-size: 30px;
+  color: #333;
+  text-decoration: none; 
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50%; 
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-buttons a:hover {
+  background-color: #862633;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px); 
+}
+
+.navigation-buttons a:active {
+  background-color: #862633;
+  transform: translateY(2px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.previous {
+  color: #e74c3c;
+}
+
+.previous:hover {
+  background-color: #e74c3c;
+}
+
+.next {
+  color: #862633; 
+}
+
+.next:hover {
+  background-color: #862633;
+}
+
+@media (max-width: 768px) {
+  .navigation-buttons {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .navigation-buttons a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 769px) {
+  .navigation-buttons {
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+
+  .navigation-buttons a {
+    font-size: 28px;
+  }
+}
