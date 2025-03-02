@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSET Foundation | Golden Jubilee - 2015</title>
+    <meta name="AssetFoundation" content="A.S.S.E.T Foundation Educational trust and the formation of the trust by Alumni association of Sir M.Ct.M Boys School Chennai , India.">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        #pdf-viewer {
+            width: 100%;
+            height: 70vh;
+            border: 1px solid #e0e0e0;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: auto;
+            position: relative;
+        }
+        
+        .pdf-navigation {
+            text-align: center;
+            margin-bottom: 2em;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+        
+        .pdf-navigation button {
+            padding: 0.8em 1.5em;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .pdf-navigation button i {
+            margin: 0 5px;
+        }
+        
+        .pdf-navigation button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        
+        .pdf-navigation button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .page-info {
+            margin: 0 1em;
+            display: flex;
+            align-items: center;
+            font-size: small;
+            color: #333;
+        }
+        
+        .gj_title {
+            font-size: 2em;
+            text-align: center;
+            color: #4CAF50;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            animation: fadeIn 2s ease-in-out;
+            font-weight: 600;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #prev-page {
+          font-size: small;
+        }
+
+        #next-page {
+          font-size: small;
+        }
+        
+        #zoom-controls {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1em;
+            gap: 0.5em;
+        }
+        
+        #zoom-controls button {
+            padding: 0.5em 1em;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #zoom-out, #zoom-in{
+          font-size: medium;
+        }
+        
+        /* Responsive Styles */
+        @media screen and (max-width: 991px) {
+            #pdf-viewer {
+                height: 60vh;
+            }
+            
+            .gj_title {
+                font-size: 1.8em;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            #pdf-viewer {
+                height: 55vh;
+            }
+            
+            .pdf-navigation {
+                flex-wrap: wrap;
+                gap: 0.8em;
+            }
+            
+            .gj_title {
+                font-size: 1.7em;
+                margin-top: 0.8em;
+                margin-bottom: 0.8em;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .container {
+                padding-bottom: 60px;
+            }
+            
+            #pdf-viewer {
+                height: 80vh;
+                margin-top: 1em;
+                margin-bottom: 0.5em;
+            }
+            
+            .gj_title {
+                font-size: 1.5em;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+            }
+            
+            .pdf-navigation {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(255, 255, 255, 0.95);
+                padding: 0.5em;
+                box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+                margin: 0;
+                justify-content: space-around;
+            }
+            
+            .pdf-navigation button {
+                width: auto;
+                padding: 0.7em 1em;
+                font-size: 0.9em;
+                flex: 0 0 auto;
+            }
+            
+            .pdf-navigation button span {
+                display: none;
+            }
+            
+            .pdf-navigation button i {
+                margin: 0;
+                font-size: 1.2em;
+            }
+            
+            .page-info {
+                font-size: small;
+            }
+            
+            #zoom-controls {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                margin: 0;
+                z-index: 100;
+            }
+            
+            #zoom-controls button {
+                padding: 0.3em 0.6em;
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-961ZW8JP0Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-961ZW8JP0Y');
+</script>
+<body>
+  <header class="header">
+    <a href="/" id="logo">
+      <img class="logo" src="./img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
+    </a>
+    <ul class="main-nav">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./trust-financials.html">Trust Financials</a></li>
+      <li><a href="./project.html">Projects</a></li>
+      <li><a href="./donation.html">Donation</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./events.html">Events</a></li>
+      <li><a href="./achievements.html">Achievements</a></li>
+    </ul>
+    <a href="javascript:void(0);" id="logo1">
+      <img class="logo1" src="./img/nav-bar.png" alt="Asset Foundation Logo">
+    </a>
+  </header>
+  
+  <div class="container">
+    <h1 class="gj_title">Golden Jubilee - 2015</h1>
+    
+    <div id="zoom-controls">
+      <button id="zoom-out"><i class="fas fa-search-minus"></i></button>
+      <button id="zoom-in"><i class="fas fa-search-plus"></i></button>
+    </div>
+    
+    <div id="pdf-viewer"></div>
+    
+    <div class="pdf-navigation">
+      <button id="prev-page"><i class="fas fa-chevron-left"></i> <span>Previous</span></button>
+      <div class="page-info">Page <span id="current-page" style="margin-left: 0.5em;">1</span> <span style="margin-left: 0.5em;margin-right: 0.5em;">of</span> <span id="total-pages">?</span></div>
+      <button id="next-page"><span>Next</span> <i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer_class">
+      <div class="container">	
+        <div class="content1">
+            <address>
+            <h3>A.S.S.E.T Foundation</h3>
+              6/17, Trust Street Square, <br>
+              Ramalingapuram,<br>
+              Chennai – 600012, India.<br>
+              <abbr title="Phone">Ph:</abbr> (044)2645-4939. <br>
+              <abbr title="Phone">Mobile:</abbr> +91-9884256088.<br>
+            E-Mail :<a style="color:#FFEB3B;margin-left: 0%;" href="mailto:assetfdn@gmail.com"> assetfdn@gmail.com</a>			  
+            </address>
+          <p>	
+            <a href="./about.html">About Us</a>
+            <a href="./donation.html">Donate</a>
+            <a href="./project.html">Projects</a>
+            <a href="./trust-financials.html">Financials</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./events.html">Events</a>
+            <a href="./achievements.html">Achievements</a>
+          </p>
+        </div>        
+      </div>
+    </div>
+    <div class="footer2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p>2023 ASSET ©</p>
+          </div>
+          <div class="col-md-4" style="text-align: center;">
+            <img src="./img//FINAL logo-compressed.png">
+          </div>
+          <div class="col-md-4">
+            <p>Educate and Elevate</p>
+          </div>				
+        </div>
+      </div>	
+    </div>
+  </footer>
+  
+  <!--------------------------------------------------------------
+  # Footer - end
+  ---------------------------------------------------------------->
+  
+        <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+  const logo = document.getElementById("logo1");
+  const header = document.querySelector(".header");
+  const mainNav = document.querySelector(".main-nav");
+  logo.addEventListener("click", function(event) {
+      event.preventDefault();
+      header.classList.toggle("show-nav");
+  });
+
+  document.addEventListener("click", function(event) {
+      if (!header.contains(event.target) && !mainNav.contains(event.target)) {
+          header.classList.remove("show-nav");
+      }
+  });
+});
+
+</script>
+
+  <!-- Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+  
+  <!-- PDF Viewer Script -->
+  <script>
+    const pdfViewer = document.getElementById('pdf-viewer');
+    const prevButton = document.getElementById('prev-page');
+    const nextButton = document.getElementById('next-page');
+    const zoomInButton = document.getElementById('zoom-in');
+    const zoomOutButton = document.getElementById('zoom-out');
+    const currentPageSpan = document.getElementById('current-page');
+    const totalPagesSpan = document.getElementById('total-pages');
+    
+    let currentPage = 1;
+    let pdfDoc = null;
+    let scale = 1.5; // Default scale
+    let canvas = null;
+    let context = null;
+    
+    // Function to set PDF viewer height based on viewport
+    function adjustPdfViewerHeight() {
+      const viewportHeight = window.innerHeight;
+      const isMobile = window.innerWidth <= 480;
+      
+      if (isMobile) {
+        pdfViewer.style.height = `${viewportHeight * 0.8}px`;
+      } else if (window.innerWidth <= 768) {
+        pdfViewer.style.height = `${viewportHeight * 0.55}px`;
+      } else {
+        pdfViewer.style.height = `${viewportHeight * 0.7}px`;
+      }
+    }
+    
+    function renderPage(pageNum) {
+      pdfDoc.getPage(pageNum).then(page => {
+        canvas = document.createElement('canvas');
+        context = canvas.getContext('2d');
+        
+        const containerWidth = pdfViewer.clientWidth - 20; // 20px padding
+        const viewport = page.getViewport({ scale: 1.0 });
+        const containerScale = containerWidth / viewport.width;
+        
+        const finalScale = Math.min(containerScale, scale);
+        
+        const scaledViewport = page.getViewport({ scale: finalScale });
+        
+        canvas.height = scaledViewport.height;
+        canvas.width = scaledViewport.width;
+        
+        pdfViewer.innerHTML = '';
+        pdfViewer.appendChild(canvas);
+        
+        currentPageSpan.textContent = currentPage;
+        
+        page.render({
+          canvasContext: context,
+          viewport: scaledViewport
+        });
+      });
+    }
+    
+    function loadPdf(url) {
+      pdfjsLib.getDocument(url).promise.then(pdf => {
+        pdfDoc = pdf;
+        totalPagesSpan.textContent = pdf.numPages;
+        renderPage(currentPage);
+        updateNavigationButtons();
+      });
+    }
+    
+    function updateNavigationButtons() {
+      prevButton.disabled = currentPage <= 1;
+      nextButton.disabled = currentPage >= pdfDoc.numPages;
+    }
+    
+    prevButton.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage);
+        updateNavigationButtons();
+      }
+    });
+    
+    nextButton.addEventListener('click', () => {
+      if (currentPage < pdfDoc.numPages) {
+        currentPage++;
+        renderPage(currentPage);
+        updateNavigationButtons();
+      }
+    });
+    
+    zoomInButton.addEventListener('click', () => {
+      scale += 0.2;
+      renderPage(currentPage);
+    });
+    
+    zoomOutButton.addEventListener('click', () => {
+      if (scale > 0.5) {
+        scale -= 0.2;
+        renderPage(currentPage);
+      }
+    });
+    
+    // Add keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' && currentPage < pdfDoc.numPages) {
+        currentPage++;
+        renderPage(currentPage);
+        updateNavigationButtons();
+      } else if (e.key === 'ArrowLeft' && currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage);
+        updateNavigationButtons();
+      }
+    });
+    
+    // Adjust PDF viewer height on load and window resize
+    window.addEventListener('load', adjustPdfViewerHeight);
+    window.addEventListener('resize', () => {
+      adjustPdfViewerHeight();
+      if (pdfDoc) renderPage(currentPage);
+    });
+    
+    // Touch swipe navigation for mobile devices
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    pdfViewer.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    pdfViewer.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+    
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      if (touchEndX < touchStartX - swipeThreshold && currentPage < pdfDoc.numPages) {
+        // Swipe left - next page
+        currentPage++;
+        renderPage(currentPage);
+        updateNavigationButtons();
+      } else if (touchEndX > touchStartX + swipeThreshold && currentPage > 1) {
+        // Swipe right - previous page
+        currentPage--;
+        renderPage(currentPage);
+        updateNavigationButtons();
+      }
+    }
+    
+    // Load the PDF (replace with your PDF path)
+    loadPdf('/MCtM-Souvenir-E-book.pdf');
+  </script>
+</body>
+</html>
