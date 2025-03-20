@@ -23,6 +23,32 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+
+    .gj-content{
+        font-size: large;
+      }
+    .gj_title {
+      font-size: larger !important;
+      color: #8b5a2b;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      position: relative;
+      padding-bottom: 1rem;
+    }
+    
+    /* .gj_title::after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 3px;
+      background-color: #d4af37;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    } */
+
         #pdf-viewer {
             width: 100%;
             height: 70vh;
@@ -79,16 +105,7 @@
             font-size: small;
             color: #333;
         }
-        
-        .gj_title {
-            font-size: 2em;
-            text-align: center;
-            color: #4CAF50;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            animation: fadeIn 2s ease-in-out;
-            font-weight: 600;
-        }
+      
         
         @keyframes fadeIn {
             from {
@@ -136,10 +153,7 @@
             #pdf-viewer {
                 height: 60vh;
             }
-            
-            .gj_title {
-                font-size: 1.8em;
-            }
+
         }
         
         @media screen and (max-width: 768px) {
@@ -152,11 +166,6 @@
                 gap: 0.8em;
             }
             
-            .gj_title {
-                font-size: 1.7em;
-                margin-top: 0.8em;
-                margin-bottom: 0.8em;
-            }
         }
         
         @media screen and (max-width: 480px) {
@@ -170,11 +179,6 @@
                 margin-bottom: 0.5em;
             }
             
-            .gj_title {
-                font-size: 1.5em;
-                margin-top: 0.5em;
-                margin-bottom: 0.5em;
-            }
             
             .pdf-navigation {
                 position: fixed;
@@ -253,8 +257,18 @@
   </header>
   
   <div class="container">
-    <h1 class="gj_title">Golden Jubilee - 2015</h1>
-    
+    <div class="gj-content">
+      <div class="gj_title"><span style="font-size: larger !important;">Golden Jubilee - 2015</span></div>
+      <p>Some of the 1965 SSLC passed out students of the then MCT High School, Purasawakkam, Chennai-600084, were in contact with one another even years after completing school final (S.S.L.C).</p>
+      
+      <p>Some of them met in the year 2014, and they decided unanimously to celebrate the Golden jubilee of the 1965 batch in the year 2015. They took great pains, traced more and more batchmates, and finally established contact with more than ninety students.</p>
+      
+      <p>They raised funds from the batchmates, celebrated the Golden jubilee in the same school premises on 26-12-2015. More than ninety members attended the function. People from Bombay, Hyderabad, Bangalore, Andrapradesh attended the function. Two of them came all the way from USA. The daughter of the then Headmaster, Mrs.Jayalakshmi, retired DGM of Indian overseas bank presided over the function in the presence of the chairman.</p>
+      
+      <p>At least four teachers who were live and family members of other few teachers were invited and offered shawls. A commemoration stamp was released in the function. Webcast was arranged to felicitate the former students living abroad to see the program live. A good lunch was offered.</p>
+      
+      <p>There was some money left in the coffers after the function. The intimacy was such that they did not want to lose the momentum but to deflect and redirect the force towards charitable activities. Thus ASSET Foundation was born.</p>
+    </div>
     <div id="zoom-controls">
       <button id="zoom-out"><i class="fas fa-search-minus"></i></button>
       <button id="zoom-in"><i class="fas fa-search-plus"></i></button>
