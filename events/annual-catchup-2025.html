@@ -1,0 +1,705 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <title>Event Details | Annual CatchUp | 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+  
+    .main-content {
+      font-family: Arial, sans-serif;
+      line-height: 1.6em;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-size: large;
+      line-height: 1.6em;
+      padding: 2em;
+      margin-top: 3em;
+      background: #fff;
+      max-width: 60em;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0.5em;
+      box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    }
+  
+    .main-content h1, h2 {
+      color: #333;
+      text-align: center;
+    }
+  
+    .main-content .p {
+      color: #555;
+    }
+  
+    .group-photo {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .group-photo img {
+      width: 100%;
+      max-width: 40em;
+      border-radius: 0.5em;
+      display: block;
+      margin: 1em auto;
+    }
+
+    .image-description {
+      text-align: center;
+      font-size: 1em;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 2em;
+    }  
+
+
+  .photo-gallery {
+    display: flex;
+    gap: 2em; 
+    overflow-x: auto;
+    padding: 2em 0;
+  }
+
+  .photo-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .photo-card img {
+    width: 60em;
+    height: 40em;
+    min-width: 500px;
+    object-fit: cover;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .photo-card img:hover {
+    transform: scale(1.05);
+  }
+
+  .photo-desc {
+    margin-top: 2em;
+    font-size: 1em;
+    font-weight: bolder;
+    color: #555;
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1050;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    background: #fff;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+  }
+
+  .popup-content img {
+    width: 80%;
+    height: 80%;
+    min-width: 500px;
+    border-radius: 0.5em;
+  }
+
+  .popup-close {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .popup-thumbnails {
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    padding: 1em 0;
+    justify-content: center;
+  }
+
+  .popup-thumbnails img {
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .popup-thumbnails img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+  }
+
+  .popup-btn {
+    border-style: none;
+    background-color: #fff;
+  }
+
+  .event-contants{
+    font-size: 1.4em !important;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: auto;
+  }
+
+  video {
+    max-width: 100%; 
+    height: auto;
+  }
+
+  iframe {
+      max-width: 100%;
+      height: 315px;
+      border: none;
+    }
+    #meeting-title{
+        margin-top: 1.4em;
+        margin-bottom: 1em;
+        font-weight: bolder;
+      }
+
+    
+    @media screen and (max-width: 768px) {
+      .main-content {
+        padding: 1.5em;
+        font-size: 1em;
+      }
+  
+      .main-content h1 {
+        font-size: 1.8em;
+      }
+  
+      .main-content h2 {
+        font-size: 1.4em;
+      }
+  
+
+      .group-photo img {
+        max-width: 100%;
+      }
+
+    }
+  
+    @media screen and (max-width: 1000px) {
+      .main-content {
+        padding: 1em;
+        font-size: 2em !important;
+      }
+  
+      .main-content h1 {
+        font-size: 2.5em !important;
+      }
+  
+      .main-content h2 {
+        font-size: 2.2em !important;
+      }
+    }
+
+          @media (min-width: 1000px) and (max-width: 2000px) {
+        .event-contants{
+        font-size: 2em !important;
+      }
+
+      }
+
+    @media screen and (max-width: 1000px) {
+      .photo-desc {
+        margin-top: 2em;
+        font-size: 15px;
+        line-break: auto;
+        font-weight: bolder;
+        color: #555;
+      }
+      #meeting-title{
+        font-size: 25px;
+        margin-top: 1.4em;
+        margin-bottom: 1em;
+        font-weight: bolder;
+      }
+
+      .main-content .container{
+        font-size: 18px;
+      }
+
+      .mt-5{
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .photo-card img {
+        width: 60em;
+        height: 40em;
+        min-width: 400px;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 0.5em;
+        box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      .popup-content {
+        background: #fff;
+        padding: 0.3em;
+        border-radius: 0.5em;
+        box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+      }
+
+      .popup-content img {
+        width: 50%;
+        height: 100%;
+        min-width: 500px;
+        border-radius: 0.5em;
+      }
+
+      .event-contants{
+        font-size: 1em !important;
+      }
+    }
+  </style>
+  
+
+</head>
+
+<body>
+  <header class="header">
+    <a href="/" id="logo">
+      <img class="logo" src="../img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
+    </a>
+    <ul class="main-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Us</a></li>
+      <li><a href="../trust-financials.html">Trust Financials</a></li>
+      <li><a href="../project.html">Projects</a></li>
+      <li><a href="../donation.html">Donation</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../events.html">Events</a></li>
+      <li><a href="../achievements.html">Achievements</a></li>
+      <li><a href="../golden-jubliee.html">Golden Jubilee - 2015</a></li>
+    </ul>
+    <a href="javascript:void(0);" id="logo1">
+      <img class="logo1" src="../img/nav-bar.png" alt="Asset Foundation Logo">
+    </a>
+  </header>
+  <div class="main-content">
+      <h1 style="text-align: center;font-weight: bold;margin-bottom: 1em;">Annual Catchup | 2025</h1>
+
+      <p><strong>Date:</strong> 01 Jun 2025</p>
+      <p><strong>Venue:</strong> Mr. P.S. Ramachandran's residence, Aynavaram, Chennai</p>
+      <p><strong>Time:</strong> 11:00 AM</p>
+
+
+            <div class="container">
+          <div class="photo-gallery">
+              <div class="photo-card">
+                  <img src="./img/annual-catchup-2025-cover.jpeg" alt="Annual-Catchup-2025" class="popup-trigger">
+              </div>
+              </div>
+              </div>
+
+      <p>
+      To inspire and uplift the beneficiaries of the A.S.S.E.T Foundation, we organized a special gathering that brought together both past and present students.
+      </p>
+
+      <p>
+      On June 1st, 2025, we united all current and former beneficiaries under one roof to celebrate achievements, share journeys, and reward excellence. To make the occasion truly impactful, we invited none other than the dynamic orator and role model, <strong>Mr. R. Soundarapandian</strong>, whose passionate words stirred enthusiasm among the students.
+      </p>
+
+      <p>
+      The efforts of <strong>Trustees Mr. P.S. Ramachandran, Mr. TSR, Mr. Lakshmanan T, Mr. T.C. Alagar Raja</strong>, and former beneficiaries <strong>Mrs. Ishwarya, Mr. Kesavaeswaran, Ms. Mohana Easwari, Ms. Revathi, Ms. Divya L, Ms. Latha, Mr. Gunasekar, Ms. Swetha</strong>, and <strong>Balaji</strong> were instrumental in seamlessly organizing and executing this memorable event.
+      </p>
+
+      <br>
+      <h3>Opening Address</h3>
+      <p>    The day began with warmth and vision, as <strong>Ms. Mohana Easwari</strong> delivered an uplifting welcome address, setting a beautiful tone of gratitude and ambition that would echo through the rest of the day.
+</p>
+
+             <div class="container">
+          <div class="photo-gallery">
+              <div class="photo-card">
+                  <img src="./img/Welcome-speech-by-ms-ME.jpeg" alt="Welcome Speech by Ms. Mohana Easwari" class="popup-trigger">
+              </div>
+              </div>
+              </div>
+      <br>
+
+      <h3>Honouring Our Esteemed Guest</h3>
+      <p>We began by expressing our heartfelt appreciation to our Chief Guest, <strong>Mr. R. Soundarapandian</strong>, by presenting a bouquet, a token of appreciation, and a commemorative shield.</p>
+
+      <div class="container">
+          <div class="photo-gallery">
+              <div class="photo-card">
+                  <img src="./img/MsMohanaEswari-Present-bouquet-To-MsRSP.jpeg" alt="Bouquet presentation to Mr. R. Soundarapandian" class="popup-trigger">
+                  <p class="photo-desc">Ms. Mohana Easwari presenting a bouquet to our Chief Guest</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/Mr-TL-Present-Gift-To-CG-Mr-RSP.jpeg" alt="Gift presentation" class="popup-trigger">
+                  <p class="photo-desc">Mr. Lakshmanan T presenting a gift to Mr. R. Soundarapandian</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/MrPSR-Present-Shield-To-MrRSP.jpeg" alt="Shield presentation" class="popup-trigger">
+                  <p class="photo-desc">Mr. P.S. Ramachandran presenting a commemorative shield to the Chief Guest</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/MrRSP-Present-Motivation-Magazine-To-MrPSR.jpeg" alt="Motivational letter presentation" class="popup-trigger">
+                  <p class="photo-desc">Mr. R. Soundarapandian gifting a special motivational letter to Mr. P.S. Ramachandran</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/MrRSP-With-ASSET-Trustee-Members.jpeg" alt="MrRSP With ASSET Trustee" class="popup-trigger">
+                  <p class="photo-desc">Mr. R. Soundarapandian With A.S.S.E.T Foundation Trustees</p>
+              </div>
+          </div>
+      </div>
+
+            <br>
+
+      <h3>Celebrating Academic Excellence</h3>
+      <p>
+    Shining stars were honored for their academic achievements with awards and heartfelt gifts. From microbiology to mathematics, each student represented the incredible determination A.S.S.E.T Foundation fosters. Here are a few powerful moments of celebration:
+      </p>
+
+      <div class="container">
+          <div class="photo-gallery">
+              <div class="photo-card">
+                  <img src="./img/MrPSR-Present-Shield-To-Ms-Divya-.jpeg" alt="Ms. Divya L award" class="popup-trigger">
+                  <p class="photo-desc">Ms. Divya L honored for her stellar performance in Microbiology</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/MrRSP-Present-Gift-To-MsRevathi.jpg" alt="Ms. Revathi gift" class="popup-trigger">
+                  <p class="photo-desc">Ms. Revathi awarded for excellence in B.Com and M.Com</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/ASSET-Trustee-Present-Shield-To-MsKothai.jpeg" alt="Ms. Kothai shield" class="popup-trigger">
+                  <p class="photo-desc">Ms. Kothai recognized for completing Nursing</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/Mr-RSP-Present-Shield-To-MsSakthiswari.jpeg" alt="Ms. Sakthiswari award" class="popup-trigger">
+                  <p class="photo-desc">Ms. Sakthiswari celebrated for topping her first year in B.Sc Computer Science</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/MrRSP-Present-Gift-To-MsSangeetha.jpeg" alt="Ms. Sangeetha award" class="popup-trigger">
+                  <p class="photo-desc">Ms. Sangeetha recognized for her excellence in B.Com</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/MsRSP-Present-Shield-To-MsJayalakshmi.jpeg" alt="Ms. Jaya Lakshmi award" class="popup-trigger">
+                  <p class="photo-desc">Ms. Jaya Lakshmi awarded for securing top marks in B.Sc Mathematics</p>
+              </div>
+          </div>
+      </div>
+
+      <p>
+Additionally, <strong>Ms. Jaya Lakshmi, Ms. Sangeetha, and Ms. Sakthiswari</strong> were gifted elegant watches as a mark of their outstanding academic journey. <strong>Ms. Divya L</strong> received a beautiful purse from <strong>Mr. P.S. Ramachandran</strong> — a symbol of appreciation and encouragement.      </p>
+
+      <br/>
+
+      <div class="container">
+          <div class="photo-gallery">
+              <div class="photo-card">
+                  <img src="./img/speech-by-mrRSP.jpg" alt="Speech by Mr. R.S.P" class="popup-trigger">
+              </div>
+              </div>
+              </div>
+<p style="text-align: center !important; font-weight: bold; margin-top: 1em; margin-bottom: 5em !important; font-size: 1.1em;">
+    With passion and clarity, Mr. R. Soundarapandian delivered a fiery, unforgettable speech on success, self-belief, and purpose. His surprise motivational song was the soul of the event, touching every heart in the room.
+</p>
+
+      <h3>Stories that Inspire</h3>
+      <p>
+      Our alumni, including <strong>Divya, Ishwarya, Revathi, Swetha, Latha, and Mohana Easwari</strong>, shared heartfelt speeches about their journeys, the struggles they overcame, and how A.S.S.E.T Foundation stood as a pillar of support during their transformation.
+      </p>
+   <div class="video-container">
+    <video src="./img/Speech-by-Ms.Revathi.mp4" controls></video>
+</div>
+<p style="text-align: center !important; font-weight: bold; margin-top: 1em; margin-bottom: 5em !important; font-size: 1.1em;">
+    A deeply moving account — Ms. Revathi opens up about her personal journey of perseverance, resilience, and triumph against the odds.
+</p>
+
+
+
+      <h3>A Tribute to Dedication</h3>
+
+
+            <div class="container">
+          <div class="photo-gallery">
+              <div class="photo-card">
+                  <img src="./img/MsPSR-Present-Gift-To-MrTSR.jpeg" alt="Gift to Mr. TSR" class="popup-trigger">
+              </div>
+              </div>
+              </div>
+      <p>
+      For his exceptional dedication in raising funds from organizations like Zoho, and for helping students land their dream jobs, <strong>Mr. TSR</strong> was honored by <strong>Mr. P.S. Ramachandran</strong> with a unique Mathematical Clock - symbolizing precision, timing, and the power of support.
+      </p>
+
+      <br>
+      <h3>Celebrating a Milestone</h3>
+      <p>
+        Emotions ran high as we surprised our beloved mentor, <strong>Mr. P.S. Ramachandran</strong>, on his 75th birthday with gifts and a joyful cake-cutting ceremony — a small tribute to a man who has shaped so many futures.
+
+      </p>
+
+             <div class="container">
+          <div class="photo-gallery">
+              <div class="photo-card">
+                  <img src="./img/MrPSR-Cake-Cutting.jpeg" alt="Cake cutting celebration for Mr. PSR" class="popup-trigger">
+              </div>
+              </div>
+              </div>
+      <br>
+<h3>Special Moments</h3>
+<p>
+    In a shower of love and gratitude, students and trustees came together to present heartfelt gifts to <strong>Mr. PSR</strong> — from photo cards to memorable watches — all echoing a single message: <strong>THANK YOU FOR BELIEVING IN US</strong>.
+</p>
+      <div class="container">
+          <div class="photo-gallery">
+              <div class="photo-card">
+                  <img src="./img/ASSET-TRUSTEES-Present-Gift-To-MrPSR.jpeg" alt="Gift to Mr. PSR" class="popup-trigger">
+                  <p class="photo-desc">A.S.S.E.T Trustees presenting a token of love to Mr. PSR</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/Students-Present-gift-To-MsPSR-2.jpeg" alt="Cup presented" class="popup-trigger">
+                  <p class="photo-desc">Students presenting a commemorative cup to Mr. PSR</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/Students-Present-Gift-To-MrPSR.jpeg" alt="Photo card" class="popup-trigger">
+                  <p class="photo-desc">Students presenting a heartfelt photo card to Mr. PSR</p>
+              </div>
+              <div class="photo-card">
+                  <img src="./img/Students-Present-gift-To-MsPSR-3.jpeg" alt="Watch presented" class="popup-trigger">
+                  <p class="photo-desc">Trust trainees presenting a memorable watch to Mr. PSR</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="video-container">
+          <video src="./img/MrPSR-Gift-Photo-Card.mp4" controls></video>
+      </div>
+<br>
+      <h3>Closing Note</h3>
+      <p>
+    The event wrapped up with a power-packed speech by <strong>Ms. Revathi</strong>, leaving every listener inspired. A delicious meal followed, where laughter, conversations, and memories were shared — bonding everyone in warmth and hope.
+      </p>
+      <p>
+    We extend our deepest thanks to our Trustees, alumni volunteers, and the ever-energetic <strong>Mr. R. Soundarapandian</strong> for turning this gathering into an unforgettable celebration of purpose, passion, and people.
+      </p>
+
+
+
+             <div class="container">
+          <div class="photo-gallery">
+              <div class="photo-card">
+                  <img src="./img/GROUP-PHOTO-WITH-MrPSR.jpeg" alt="ASSET-FOUNDATION" class="popup-trigger">
+              </div>
+              </div>
+              </div>
+
+        <div class="popup-overlay">
+      <span class="popup-close">&times;</span>
+      <div class="popup-content">
+        <!-- <button id="prev-btn" class="popup-btn popup-btn-left" style="font-size: 3rem;">
+          <i class="fas fa-chevron-left"></i>
+        </button>         -->
+        <img src="" alt="Popup Image" id="popup-img">
+        <!-- <button id="next-btn" class="popup-btn popup-btn-right" style="font-size: 3rem;">
+          <i class="fas fa-chevron-right"></i>
+        </button> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const popupOverlay = document.querySelector('.popup-overlay');
+      const popupContentImg = document.getElementById('popup-img');
+      const popupClose = document.querySelector('.popup-close');
+      const triggers = document.querySelectorAll('.popup-trigger');
+
+      triggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          popupOverlay.style.display = 'flex';
+          popupContentImg.src = e.target.src; 
+        });
+      });
+
+      popupClose.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+      });
+
+      popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+          popupOverlay.style.display = 'none';
+        }
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const popupOverlay = document.querySelector('.popup-overlay');
+      const popupContentImg = document.getElementById('popup-img');
+      const popupClose = document.querySelector('.popup-close');
+      const triggers = document.querySelectorAll('.popup-trigger');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const isSmallScreen = window.innerWidth < 450;
+      console.log('isSmallScreen: ', isSmallScreen);
+      const imageSources = Array.from(triggers).map(trigger => trigger.src);
+      let currentIndex = 0; // Start with the first image
+
+      function updatePopupImage(index) {
+        popupContentImg.src = imageSources[index];
+        currentIndex = index;
+      }
+
+      triggers.forEach((trigger, index) => {
+        trigger.addEventListener('click', (e) => {
+          popupOverlay.style.display = 'flex';
+          updatePopupImage(index);
+        });
+      });
+
+      popupClose.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+      });
+
+      popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+          popupOverlay.style.display = 'none';
+        }
+      });
+
+      prevBtn.addEventListener('click', () => {
+        const prevIndex = (currentIndex === 0) ? imageSources.length - 1 : currentIndex - 1;
+        updatePopupImage(prevIndex);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        const nextIndex = (currentIndex === imageSources.length - 1) ? 0 : currentIndex + 1;
+        updatePopupImage(nextIndex);
+      });
+    });
+
+
+  </script>
+<footer>
+  <div class="footer_class">
+    <div class="container">	
+      <div class="content1">
+          <address>
+          <h3>A.S.S.E.T Foundation</h3>
+          6/17, Trust Square Street, <br>
+          Ramalingapuram,<br>
+          Chennai – 600012, India.<br>
+            <abbr title="Phone">Ph:</abbr> (044)2645-4939. <br>
+            <abbr title="Phone">Mobile:</abbr> +91-9884256088.<br>
+          E-Mail :<a style="color:#FFEB3B;margin-left: 0%;" href="mailto:assetfdn@gmail.com"> assetfdn@gmail.com</a>			  
+          </address>
+        <p>	
+          <a href="../about.html">About Us</a>
+          <a href="../donation.html">Donate</a>
+          <a href="../project.html">Projects</a>
+          <a href="../trust-financials.html">Financials</a>
+          <a href="../contact.html">Contact Us</a>
+          <a href="../events.html">Events</a>
+          <a href="../achievements.html">Achievements</a>
+          <a href="../golden-jubliee.html">Golden Jubilee - 2015</a>
+        </p>
+      </div>        
+    </div>
+  </div>
+  <div class="footer2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p>2023 ASSET ©</p>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+          <img src="../img//FINAL logo-compressed.png">
+        </div>
+        <div class="col-md-4">
+          <p>Educate and Elevate</p>
+        </div>				
+      </div>
+    </div>	
+  </div>
+</footer>
+
+<!--------------------------------------------------------------
+# Footer - end
+---------------------------------------------------------------->
+
+  <!-- Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const logo = document.getElementById("logo1");
+        const header = document.querySelector(".header");
+        const mainNav = document.querySelector(".main-nav");
+        logo.addEventListener("click", function(event) {
+            event.preventDefault();
+            header.classList.toggle("show-nav");
+        });
+
+        document.addEventListener("click", function(event) {
+            if (!header.contains(event.target) && !mainNav.contains(event.target)) {
+                header.classList.remove("show-nav");
+            }
+        });
+    });
+  </script>
+
+</body>
+
+</html>
