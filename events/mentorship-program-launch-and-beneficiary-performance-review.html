@@ -1,0 +1,578 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <title>Event Details | Mentorship Program Launch & Beneficiary Performance Review | 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+  
+    .main-content {
+      font-family: Arial, sans-serif;
+      line-height: 1.6em;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-size: large;
+      line-height: 1.6em;
+      padding: 2em;
+      margin-top: 3em;
+      background: #fff;
+      max-width: 60em;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0.5em;
+      box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    }
+  
+    .main-content h1, h2 {
+      color: #333;
+      text-align: center;
+    }
+  
+    .main-content .p {
+      color: #555;
+    }
+  
+    .group-photo {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .group-photo img {
+      width: 100%;
+      max-width: 40em;
+      border-radius: 0.5em;
+      display: block;
+      margin: 1em auto;
+    }
+
+    .image-description {
+      text-align: center;
+      font-size: 1em;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 2em;
+    }  
+
+
+  .photo-gallery {
+    display: flex;
+    gap: 2em; 
+    overflow-x: auto;
+    padding: 2em 0;
+  }
+
+  .photo-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .photo-card img {
+    width: 60em;
+    height: 40em;
+    min-width: 500px;
+    object-fit: cover;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .photo-card img:hover {
+    transform: scale(1.05);
+  }
+
+  .photo-desc {
+    margin-top: 2em;
+    font-size: 1em;
+    font-weight: bolder;
+    color: #555;
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1050;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    background: #fff;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+  }
+
+  .popup-content img {
+    width: 80%;
+    height: 80%;
+    min-width: 500px;
+    border-radius: 0.5em;
+  }
+
+  .popup-close {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .popup-thumbnails {
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    padding: 1em 0;
+    justify-content: center;
+  }
+
+  .popup-thumbnails img {
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .popup-thumbnails img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+  }
+
+  .popup-btn {
+    border-style: none;
+    background-color: #fff;
+  }
+
+  .event-contants{
+    font-size: 1.4em !important;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: auto;
+  }
+
+  video {
+    max-width: 100%; 
+    height: auto;
+  }
+
+  .sub-title{
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+    .video-container2 {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            margin: 2em 0;
+        }
+
+        .video-container2 iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5em;
+        }
+    #meeting-title{
+        margin-top: 1.4em;
+        margin-bottom: 1em;
+        font-weight: bolder;
+      }
+
+    
+    @media screen and (max-width: 768px) {
+      .main-content {
+        padding: 1.5em;
+        font-size: 1em;
+      }
+  
+      .main-content h1 {
+        font-size: 1.8em;
+      }
+  
+      .main-content h2 {
+        font-size: 1.4em;
+      }
+  
+
+      .group-photo img {
+        max-width: 100%;
+      }
+
+    }
+  
+    @media screen and (max-width: 1000px) {
+      .main-content {
+        padding: 1em;
+        font-size: 2em !important;
+      }
+  
+      .main-content h1 {
+        font-size: 2.5em !important;
+      }
+  
+      .main-content h2 {
+        font-size: 2.2em !important;
+      }
+    }
+
+    @media (min-width: 1000px) and (max-width: 2000px) {
+        .event-contants{
+        font-size: 2em !important;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      .photo-desc {
+        margin-top: 2em;
+        font-size: 15px;
+        line-break: auto;
+        font-weight: bolder;
+        color: #555;
+      }
+      #meeting-title{
+        font-size: 25px;
+        margin-top: 1.4em;
+        margin-bottom: 1em;
+        font-weight: bolder;
+      }
+
+      .main-content .container{
+        font-size: 18px;
+      }
+
+      .mt-5{
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .photo-card img {
+        width: 60em;
+        height: 40em;
+        min-width: 400px;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 0.5em;
+        box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      .popup-content {
+        background: #fff;
+        padding: 0.3em;
+        border-radius: 0.5em;
+        box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+      }
+
+      .popup-content img {
+        width: 50%;
+        height: 100%;
+        min-width: 500px;
+        border-radius: 0.5em;
+      }
+
+      .event-contants{
+        font-size: 1em !important;
+      }
+    }
+  </style>
+  
+
+</head>
+
+<body>
+  <header class="header">
+    <a href="/" id="logo">
+      <img class="logo" src="../img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
+    </a>
+    <ul class="main-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Us</a></li>
+      <li><a href="../trust-financials.html">Trust Financials</a></li>
+      <li><a href="../project.html">Projects</a></li>
+      <li><a href="../donation.html">Donation</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../events.html">Events</a></li>
+      <li><a href="../achievements.html">Achievements</a></li>
+      <li><a href="../golden-jubliee.html">Golden Jubilee - 2015</a></li>
+    </ul>
+    <a href="javascript:void(0);" id="logo1">
+      <img class="logo1" src="../img/nav-bar.png" alt="Asset Foundation Logo">
+    </a>
+  </header>
+    <div class="main-content">
+        <h1 style="text-align: center; font-weight: bold; margin-bottom: 1em;">Mentorship Program Launch & Beneficiary Performance Review | 2025</h1>
+
+        <p><strong>Date:</strong> 26th October 2025</p>
+        <p><strong>Venue:</strong> Mr. P.S. Ramachandran's residence, Aynavaram, Chennai</p>
+        <p><strong>Time:</strong> 11:00 AM - 12:45 PM</p>
+
+        <div class="group-photo">
+            <img src="./img/Mentorship-Program-Launch-and-Beneficiary -Performance-Review/COVER2.jpeg" alt="Mentorship Program Launch" class="popup-trigger">
+        </div>
+
+        <p>
+            On 26th October 2025, we hosted a special meeting to discuss the A.S.S.E.T Foundation’s Mentorship Program and Performance Review System, with a focus on defining the roles and responsibilities of the beneficiaries. The event was held at the residence of Trustee <strong>Mr. P.S. Ramachandran</strong> from 11:00 AM to 12:45 PM. Attendees included current beneficiaries, Trustee <strong>Mr. P.S. Ramachandran</strong>, and volunteers: <strong>Mr. Kesavaeswaran</strong>, <strong>Ms. Swetha</strong>, <strong>Ms. Latha</strong>, <strong>Ms. Revathi</strong>, <strong>Ms. Gayathri</strong>, <strong>Mr. Gunasekar</strong>, <strong>Ms. Archana</strong>, and <strong>Mr. Balaji</strong>.
+        </p>
+
+        <p>
+            During the meeting, <strong>Mr. Kesavaeswaran</strong> gave a comprehensive overview of the Mentorship Program and the Performance Review System. Each beneficiary was paired with a mentor, who will track their academic progress and provide regular updates to the trust.
+        </p>
+
+        <br>
+        <h3 class="sub-title">Introduction to the Mentorship Program</h3>
+        <p>
+            The attendees were introduced to the A.S.S.E.T Foundation panel, with <strong>Mr. Kesavaeswaran</strong> elaborating on the mentorship and performance review systems. 
+        </p>
+        <p>
+            Each beneficiary was paired with a dedicated mentor. Going forward, mentors will have regular follow-ups with their assigned beneficiaries and report their academic progress to the trust.
+        </p>
+
+        <div class="container">
+            <div class="photo-gallery">
+                <div class="photo-card">
+                    <img src="./img/Mentorship-Program-Launch-and-Beneficiary -Performance-Review/MENTOR-STUDENTS-DISCUSSION-2.jpeg" alt="Mentor-Student Discussion" class="popup-trigger">
+                </div>
+                <div class="photo-card">
+                    <img src="./img/Mentorship-Program-Launch-and-Beneficiary -Performance-Review/MENTOR-STUDENTS-DISCUSSION-3.jpeg" alt="Mentor-Student Discussion" class="popup-trigger">
+                </div>
+                <div class="photo-card">
+                    <img src="./img/Mentorship-Program-Launch-and-Beneficiary -Performance-Review/MENTOR-STUDENTS-DISCUSSION-4.jpeg" alt="Mentor-Student Discussion" class="popup-trigger">
+                </div>
+                <div class="photo-card">
+                    <img src="./img/Mentorship-Program-Launch-and-Beneficiary -Performance-Review/MENTOR-STUDENTS-DISCUSSION-5.jpeg" alt="Mentor-Student Discussion" class="popup-trigger">
+                </div>
+                <div class="photo-card">
+                    <img src="./img/Mentorship-Program-Launch-and-Beneficiary -Performance-Review/MENTOR-STUDENTS-DISCUSSION-1.jpeg" alt="Mentor-Student Discussion" class="popup-trigger">
+                </div>
+            </div>
+        </div>
+
+        <p>
+            The mentors had in-depth discussions with each beneficiary, understanding their unique challenges and aspirations, fostering an environment of support and growth.
+        </p>
+
+        
+        <h3 class="sub-title" style="margin-top: 2em;">Special Note: Ms. Jannatul Affrin's Inspiring Journey</h3>
+        <p>
+            One of the most inspiring moments of the day came when <strong>Ms. Jannatul Affrin</strong> shared her extraordinary journey. Despite having only 10% vision, she continues to push through immense challenges and achieve academic excellence. In her most recent semester, she secured a first-class grade, proving that no obstacle is too great when fueled by determination and hard work. Her ultimate ambition is to join the Indian Administrative Service (IAS) after completing her graduation, and we have no doubt that she will achieve this goal.
+        </p>
+
+        <div class="group-photo">
+            <img src="./img/Mentorship-Program-Launch-and-Beneficiary -Performance-Review/Ms-Jannatul-Affrin-appreciation.jpeg" alt="Ms. Jannatul Affrin Appreciation" class="popup-trigger">
+        </div>
+
+        <p>
+            Ms. Affrin’s story is not just one of academic success but of resilience, perseverance, and the transformative power of support. She exemplifies that challenges are merely stepping stones when approached with courage and unwavering focus. We are incredibly proud to have her as part of the A.S.S.E.T Foundation family and will continue to provide all the support she needs as she pursues her dreams.
+        </p>
+
+        <p>
+            To show our appreciation and encouragement for her future endeavors, Trustee <strong>Mr. P.S. Ramachandran</strong> presented Ms. Affrin with a backpack. This small token symbolizes our commitment to supporting her as she continues her journey toward greatness.
+        </p>
+
+        <p>
+            We extend our heartfelt thanks to all the attendees for their participation and cooperation in making this meeting a success. Together, we continue to build a future where every beneficiary can thrive and achieve their fullest potential.
+        </p>
+
+        <div class="popup-overlay">
+            <span class="popup-close">&times;</span>
+            <div class="popup-content">
+                <img src="" alt="Popup Image" id="popup-img">
+            </div>
+        </div>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const popupOverlay = document.querySelector('.popup-overlay');
+      const popupContentImg = document.getElementById('popup-img');
+      const popupClose = document.querySelector('.popup-close');
+      const triggers = document.querySelectorAll('.popup-trigger');
+
+      triggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          popupOverlay.style.display = 'flex';
+          popupContentImg.src = e.target.src; 
+        });
+      });
+
+      popupClose.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+      });
+
+      popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+          popupOverlay.style.display = 'none';
+        }
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const popupOverlay = document.querySelector('.popup-overlay');
+      const popupContentImg = document.getElementById('popup-img');
+      const popupClose = document.querySelector('.popup-close');
+      const triggers = document.querySelectorAll('.popup-trigger');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const isSmallScreen = window.innerWidth < 450;
+      console.log('isSmallScreen: ', isSmallScreen);
+      const imageSources = Array.from(triggers).map(trigger => trigger.src);
+      let currentIndex = 0; // Start with the first image
+
+      function updatePopupImage(index) {
+        popupContentImg.src = imageSources[index];
+        currentIndex = index;
+      }
+
+      triggers.forEach((trigger, index) => {
+        trigger.addEventListener('click', (e) => {
+          popupOverlay.style.display = 'flex';
+          updatePopupImage(index);
+        });
+      });
+
+      popupClose.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+      });
+
+      popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+          popupOverlay.style.display = 'none';
+        }
+      });
+
+      prevBtn.addEventListener('click', () => {
+        const prevIndex = (currentIndex === 0) ? imageSources.length - 1 : currentIndex - 1;
+        updatePopupImage(prevIndex);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        const nextIndex = (currentIndex === imageSources.length - 1) ? 0 : currentIndex + 1;
+        updatePopupImage(nextIndex);
+      });
+    });
+
+
+  </script>
+<footer>
+  <div class="footer_class">
+    <div class="container">	
+      <div class="content1">
+          <address>
+          <h3>A.S.S.E.T Foundation</h3>
+          6/17, Trust Square Street, <br>
+          Ramalingapuram,<br>
+          Chennai – 600012, India.<br>
+            <abbr title="Phone">Ph:</abbr> (044)2645-4939. <br>
+            <abbr title="Phone">Mobile:</abbr> +91-9884256088.<br>
+          E-Mail :<a style="color:#FFEB3B;margin-left: 0%;" href="mailto:assetfoundation2015@gmail.com"> assetfoundation2015@gmail.com</a>			  
+          </address>
+        <p>	
+          <a href="../about.html">About Us</a>
+          <a href="../donation.html">Donate</a>
+          <a href="../project.html">Projects</a>
+          <a href="../trust-financials.html">Financials</a>
+          <a href="../contact.html">Contact Us</a>
+          <a href="../events.html">Events</a>
+          <a href="../achievements.html">Achievements</a>
+          <a href="../golden-jubliee.html">Golden Jubilee - 2015</a>
+        </p>
+      </div>        
+    </div>
+  </div>
+  <div class="footer2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p>2023 ASSET ©</p>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+          <img src="../img//FINAL logo-compressed.png">
+        </div>
+        <div class="col-md-4">
+          <p>Educate and Elevate</p>
+        </div>				
+      </div>
+    </div>	
+  </div>
+</footer>
+
+<!--------------------------------------------------------------
+# Footer - end
+---------------------------------------------------------------->
+
+  <!-- Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const logo = document.getElementById("logo1");
+        const header = document.querySelector(".header");
+        const mainNav = document.querySelector(".main-nav");
+        logo.addEventListener("click", function(event) {
+            event.preventDefault();
+            header.classList.toggle("show-nav");
+        });
+
+        document.addEventListener("click", function(event) {
+            if (!header.contains(event.target) && !mainNav.contains(event.target)) {
+                header.classList.remove("show-nav");
+            }
+        });
+    });
+  </script>
+
+</body>
+
+</html>
