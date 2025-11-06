@@ -1,0 +1,301 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <title>Event Details | Wedding Ceremony of Divya L M & Rajiv B</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+  
+    .main-content {
+      font-family: Arial, sans-serif;
+      line-height: 1.6em;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-size: large;
+      line-height: 1.6em;
+      padding: 2em;
+      margin-top: 3em;
+      background: #fff;
+      max-width: 60em;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0.5em;
+      box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    }
+  
+    .main-content h1, h2 {
+      color: #333;
+      text-align: center;
+    }
+  
+    .main-content .p {
+      color: #555;
+    }
+  
+    .group-photo {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .group-photo img {
+      width: 100%;
+      max-width: 40em;
+      border-radius: 0.5em;
+      display: block;
+      margin: 1em auto;
+    }
+
+    .image-description {
+      text-align: center;
+      font-size: 1em;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 2em;
+    }  
+    
+    @media screen and (max-width: 768px) {
+      .main-content {
+        padding: 1.5em;
+        font-size: 1em;
+      }
+  
+      .main-content h1 {
+        font-size: 1.8em;
+      }
+  
+      .main-content h2 {
+        font-size: 1.4em;
+      }
+  
+
+      .group-photo img {
+        max-width: 100%;
+      }
+
+    }
+  
+    @media screen and (max-width: 1000px) {
+      .main-content {
+        padding: 1em;
+        font-size: 2em !important;
+      }
+  
+      .main-content h1 {
+        font-size: 2.5em !important;
+      }
+  
+      .main-content h2 {
+        font-size: 2.2em !important;
+      }
+    }
+  </style>
+  
+
+</head>
+
+<body>
+  <header class="header">
+    <a href="/" id="logo">
+      <img class="logo" src="../img/FINAL logo-compressed.png" alt="Asset Foundation Logo">
+    </a>
+    <ul class="main-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Us</a></li>
+      <li><a href="../trust-financials.html">Trust Financials</a></li>
+      <li><a href="../project.html">Projects</a></li>
+      <li><a href="../donation.html">Donation</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../events.html">Events</a></li>
+      <li><a href="../achievements.html">Achievements</a></li>
+      <li><a href="../golden-jubliee.html">Golden Jubilee - 2015</a></li>
+    </ul>
+    <a href="javascript:void(0);" id="logo1">
+      <img class="logo1" src="../img/nav-bar.png" alt="Asset Foundation Logo">
+    </a>
+  </header>
+  <div class="main-content">
+    <div class="container">
+      <h1 style="text-align: center;font-weight: bold;margin-bottom: 1em;">Wedding Ceremony of Divya L M & Rajiv B</h1>
+      <p><strong >Date:</strong> 29 Oct 2025</p>
+      <p><strong >Venue:</strong> Nerkundram, Chennai</p>
+      <p><strong >Time:</strong> 07:00 PM</p>
+      
+        <p> We are thrilled to announce that Divya L, a former beneficiary of ASSET Foundation and the recipient of the University 4th rank in B.Sc Microbiology (2022), has tied the knot with Rajiv B on October 29th. </p> 
+        
+        <p>     The joyous occasion was attended by trustee Mr. P.S. Ramachandran and trust volunteer Mr. Kesavaeswaran, who visited the venue to congratulate the newlyweds and extend their blessings.
+</p> 
+        
+        <div class="group-photo"> <img src="./img/marriage_events/mrs-divya-mr-rajiv-wedding-ceremony-pic.jpeg" alt="Wedding Ceremony of Divya L M & Rajiv B"> 
+        </div>
+        
+        <p style="text-align: center;"> We extend our heartfelt wishes to Divya and Rajiv for a lifetime filled with love, joy, and prosperity! </p>
+
+</div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const popupOverlay = document.querySelector('.popup-overlay');
+      const popupContentImg = document.getElementById('popup-img');
+      const popupClose = document.querySelector('.popup-close');
+      const triggers = document.querySelectorAll('.popup-trigger');
+
+      triggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          popupOverlay.style.display = 'flex';
+          popupContentImg.src = e.target.src; 
+        });
+      });
+
+      popupClose.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+      });
+
+      popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+          popupOverlay.style.display = 'none';
+        }
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const popupOverlay = document.querySelector('.popup-overlay');
+      const popupContentImg = document.getElementById('popup-img');
+      const popupClose = document.querySelector('.popup-close');
+      const triggers = document.querySelectorAll('.popup-trigger');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const isSmallScreen = window.innerWidth < 450;
+      console.log('isSmallScreen: ', isSmallScreen);
+      const imageSources = Array.from(triggers).map(trigger => trigger.src);
+      let currentIndex = 0; // Start with the first image
+
+      function updatePopupImage(index) {
+        popupContentImg.src = imageSources[index];
+        currentIndex = index;
+      }
+
+      triggers.forEach((trigger, index) => {
+        trigger.addEventListener('click', (e) => {
+          popupOverlay.style.display = 'flex';
+          updatePopupImage(index);
+        });
+      });
+
+      popupClose.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+      });
+
+      popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+          popupOverlay.style.display = 'none';
+        }
+      });
+
+      prevBtn.addEventListener('click', () => {
+        const prevIndex = (currentIndex === 0) ? imageSources.length - 1 : currentIndex - 1;
+        updatePopupImage(prevIndex);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        const nextIndex = (currentIndex === imageSources.length - 1) ? 0 : currentIndex + 1;
+        updatePopupImage(nextIndex);
+      });
+    });
+
+
+  </script>
+<footer>
+  <div class="footer_class">
+    <div class="container">	
+      <div class="content1">
+          <address>
+          <h3>A.S.S.E.T Foundation</h3>
+          6/17, Trust Square Street, <br>
+          Ramalingapuram,<br>
+          Chennai – 600012, India.<br>
+            <abbr title="Phone">Ph:</abbr> (044)2645-4939. <br>
+            <abbr title="Phone">Mobile:</abbr> +91-9884256088.<br>
+          E-Mail :<a style="color:#FFEB3B;margin-left: 0%;" href="mailto:assetfoundation2015@gmail.com"> assetfoundation2015@gmail.com</a>			  
+          </address>
+        <p>	
+          <a href="../about.html">About Us</a>
+          <a href="../donation.html">Donate</a>
+          <a href="../project.html">Projects</a>
+          <a href="../trust-financials.html">Financials</a>
+          <a href="../contact.html">Contact Us</a>
+          <a href="../events.html">Events</a>
+          <a href="../achievements.html">Achievements</a>
+          <a href="../golden-jubliee.html">Golden Jubilee - 2015</a>
+        </p>
+      </div>        
+    </div>
+  </div>
+  <div class="footer2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p>2023 ASSET ©</p>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+          <img src="../img//FINAL logo-compressed.png">
+        </div>
+        <div class="col-md-4">
+          <p>Educate and Elevate</p>
+        </div>				
+      </div>
+    </div>	
+  </div>
+</footer>
+
+<!--------------------------------------------------------------
+# Footer - end
+---------------------------------------------------------------->
+
+  <!-- Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const logo = document.getElementById("logo1");
+        const header = document.querySelector(".header");
+        const mainNav = document.querySelector(".main-nav");
+        logo.addEventListener("click", function(event) {
+            event.preventDefault();
+            header.classList.toggle("show-nav");
+        });
+
+        document.addEventListener("click", function(event) {
+            if (!header.contains(event.target) && !mainNav.contains(event.target)) {
+                header.classList.remove("show-nav");
+            }
+        });
+    });
+  </script>
+
+</body>
+
+</html>
