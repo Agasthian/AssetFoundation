@@ -17,9 +17,12 @@
     .event-card {
       position: relative;
       overflow: hidden;
+      border-radius: 1em;      
+      background: #fff;        
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
     }
+
 
   
     .event-card:hover {
@@ -29,10 +32,10 @@
   
     .event-card img {
       width: 100%;
-      width: 100%;
       height: 40vb !important;
       object-fit: cover;
       transition: transform 0.3s ease;
+      border-radius: 1em;
     }
   
     .event-card:hover img {
@@ -65,6 +68,13 @@
     .card-text {
       font-size: small;
     }
+
+      @media (max-width: 1000px) {
+      .event-card{
+        margin: 3em !important;
+        border-radius: 3em;
+      }
+    }
     
   </style>
   
@@ -92,7 +102,7 @@
   </header>
   
   <div class="container my-5">
-    <h1 class="text-center mb-4">Our Events</h1>
+    <h1 class="text-center mb-4" style="margin-top: 3em;">Our Events</h1>
     <div class="row" style="padding: 3em;">
 
       <div class="col-md-4" style="padding: 1.5em;">

@@ -30,215 +30,257 @@
     <!-- Main Style.css -->
     <link rel="stylesheet" href="css/style.css">
     <style>
-      .financials .trustee-details {
-        margin-top: 2em;
-        overflow-x: auto; 
+      .financials {
+        padding: 5rem 0;
+        background-color: #ffffff;
+        min-height: 80vh;
+      }
+
+      .financials .container {
+        max-width: 1200px;
+      }
+
+      #heading {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      #heading h3 {
+        font-size: 2.75rem;
+        color: #1a1a1a;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        letter-spacing: -0.5px;
+      }
+
+      .content {
+        font-size: x-large;
+      }
+
+      .content ul {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        line-height: 2;
+        color: #1a1a1a;
+      }
+
+      .content ul li {
+        margin-bottom: 1rem;
+      }
+
+      .content ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        border-bottom: 1px solid #1a1a1a;
+        transition: all 0.3s ease;
+      }
+
+      .content ul li a:hover {
+        color: #555;
+        border-bottom-color: #555;
       }
 
       .content p {
-        font-size: large !important;
-      }
-
-      .financials .trustee-details table {
-        width: 100%;
-        border-collapse: collapse;
-        text-align: center;
-        table-layout: auto; 
-      }
-
-      .financials .trustee-details th,
-      .financials .trustee-details td {
-        padding: 0.8em;
-        font-size: 1em;
-        border: 0.1em solid #ddd;
-        white-space: nowrap;
-      }
-
-      .financials .trustee-details th {
-        background-color: #f1f1f1;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        line-height: 1.8;
         color: #333;
+        margin-bottom: 1.5rem;
       }
 
-      .financials .trustee-details td img.trustee {
-        max-width: 15em;
-        height: auto;
-        border-radius: 0.5em;
-        box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.1);
-      }
-
-      .financials .trustee-details tbody tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-
-      .financials .trustee-details tbody tr:nth-child(odd) {
-        background-color: #fff;
-      }
-
-      .para-title{
-        margin-top: 2em;
-        font-weight: bolder;
+      .auditor-section {
+        background-color: #fafafa;
+        border: 1px solid #e0e0e0;
+        padding: 2.5rem;
+        margin: 3rem 2rem;
+        border-radius: 2px;
       }
 
       .auditor_addr {
-        margin-top: 1.6em;
-        font-size: 1.2em !important;
+        margin-top: 0;
+        line-height: 1.8;
+        color: #1a1a1a;
       }
 
-      tr {
-        font-weight:500;
-        font-size: large;
+      .auditor_addr span {
+        font-weight: 700 !important;
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 1rem;
+        color: #1a1a1a;
       }
 
-      .trustee-section {
-      margin-top: 2em;
-    }
-
-    .table-responsive {
-      width: 100%;
-      overflow-x: auto;
-    }
-
-    .para-title {
-      font-size: 2em !important;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    .trustee-details table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: center;
-    }
-
-    .trustee-details th,
-    .trustee-details td {
-      padding: 1rem;
-      font-size: 1rem;
-      border: 1px solid #ddd;
-    }
-
-    .trustee-details td img.trustee {
-      height: auto;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-
-
-      @media (max-width: 1000px) {
-        .financials .trustee-details table {
-          display: block; 
-          overflow-x: auto; 
-          width: 100%; 
-          white-space: nowrap;
-        }
-
-        tr {
-          font-size: 0.8em;
-          margin-left: 13em;
-          margin-right: 13em !important;
-        }
-
-        .financials .trustee-details th,
-        .financials .trustee-details td {
-          font-size: 4em;
-          margin-left: 1.8em;
-        }
-
-        .financials .trustee-details td img.trustee {
-          max-width: 20em;
-        }
-
-        .financials .trustee-details tr {
-          display: block;
-          margin-bottom: 6em;
-        }
-
-        .financials .trustee-details th {
-          display: none !important;
-        }
-
-        .financials .trustee-details th,
-        .financials .trustee-details td {
-          display: block; 
-          text-align: center;
-        }
-
-        .auditor_img{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .para-title{
-          text-align: left;
-          padding-left: 0.6em;
-          font-size: 3.1em !important;
-          margin-bottom: 0.6em;
-        }
-
-        .content p {
-          padding-left: 0.6em;
-        }
-
-        .trust-info{
-          font-size: 4.6em;
-          margin-bottom: 0 !important;
-          margin-top: 1em;
-        }
-
-        .auditor_addr{
-          margin-top: 1em;
-        }
-
-}
-
-    @media (max-width: 1000px) {
-      .trustee-details table {
+      .auditor_img {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
       }
 
-      .trustee-details thead {
-        display: none;
-      }
-
-      .trustee-details tbody {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .trustee-details tr {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 1rem 0;
-        width: 90%;
-        border-radius: 10px;
-        padding: 1rem;
-      }
-
-      .trustee-details td {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0.5rem 0;
-      }
-
-      .trustee-details td img.trustee {
-        max-width: 200px;
+      .auditor_img img {
+        max-width: 100%;
         height: auto;
+        border: 1px solid #e0e0e0;
+        padding: 0.5rem;
+        background: white;
       }
 
       .para-title {
-        font-size: 1.8rem;
+        font-size: 1.8rem !important;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        padding: 0 2rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #1a1a1a;
       }
-    }
 
+      .trust-info {
+        font-size: 1.8rem !important;
+        margin-top: 4rem;
+      }
+
+      .trustee-section {
+        margin-top: 2rem;
+        padding: 0 2rem;
+      }
+
+      .trustees-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 3rem;
+        margin-top: 3rem;
+      }
+
+      .trustee-card {
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 2px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .trustee-card:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        transform: translateY(-2px);
+      }
+
+      .trustee-image-wrapper {
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+        background-color: #fafafa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 1rem;
+      }
+
+      .trustee-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+
+      .trustee-card:hover .trustee-image-wrapper img {
+        transform: scale(1.05);
+      }
+
+      .trustee-info {
+        padding: 2rem 1.5rem;
+        text-align: center;
+      }
+
+      .trustee-name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 0.75rem;
+      }
+
+      .trustee-designation {
+        font-size: 1rem;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 991px) {
+        .financials {
+          padding: 3rem 0;
+        }
+
+        #heading h3 {
+          font-size: 2.2rem;
+        }
+
+        .content {
+          font-size: large;
+        }
+
+        .para-title {
+          font-size: 1.5rem !important;
+        }
+
+        .auditor-section {
+          margin: 2rem 1rem;
+          padding: 2rem;
+        }
+
+        .trustees-grid {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 2.5rem;
+        }
+
+        .trustee-name {
+          font-size: 1.4rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .financials {
+          padding: 2rem 0;
+        }
+
+        #heading h3 {
+          font-size: 1.85rem;
+        }
+
+        .content ul,
+        .content p,
+        .trustee-section {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .para-title {
+          padding: 0 1rem;
+          padding-bottom: 0.5rem;
+          font-size: 1.35rem !important;
+        }
+
+        .auditor-section {
+          padding: 1.5rem;
+          margin: 2rem 1rem;
+        }
+
+        .trustees-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .trustee-image-wrapper {
+          height: 200px;
+        }
+
+        .trustee-name {
+          font-size: 1.35rem;
+        }
+      }
     </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -286,17 +328,21 @@
               <li> Income Tax Dept Order for tax exemption for the trust - <a href="./img/2022/12/12aa.jpg" target="_blank">Aproval of 12AA of the Income-Tax Act, 1961.</a>
               </li>
             </ul>
-              <div class="row" style="padding-left: 2em;padding-right: 2em;">
-                <div class="col-md-6" >
-                  <p class="auditor_addr"><span style="font-weight:bolder !important;">Auditors of the Trust</span><br>
-                    M/s P.B. Vijayaraghavan & Associates <br>
-                    Address: New No.51, Giri Road,<br> 
-                    T. Nagar, Chennai 600 017</p>    
-                </div>
-                <div class="col-md-6" style="margin-top: 3em;">
-                  <a href="./img/2022/12/Vijaya-Aud.jpg" target="_blank" class="auditor_img">
-                    <img id="auditor" src="./img/2022/12/Vijaya-Aud.jpg" alt="">
-                  </a>
+              <div class="auditor-section">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <p class="auditor_addr">
+                      <span>Auditors of the Trust</span>
+                      M/s P.B. Vijayaraghavan & Associates<br>
+                      Address: New No.51, Giri Road,<br> 
+                      T. Nagar, Chennai 600 017
+                    </p>    
+                  </div>
+                  <div class="col-md-6">
+                    <a href="./img/2022/12/Vijaya-Aud.jpg" target="_blank" class="auditor_img">
+                      <img id="auditor" src="./img/2022/12/Vijaya-Aud.jpg" alt="Auditor Certificate">
+                    </a>
+                  </div>
                 </div>
               </div>
             
@@ -318,58 +364,86 @@
             <div class="trustee-section">
 
             <!-- Trustee details -->
-            <div class="table-responsive trustee-details">
-              <table>
-                <thead class="table-light">
-                  <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Designation</th>
-                    <th scope="col">Photo</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>B.Rangarajan</td>
-                    <td>Trustee / Managing Trustee</td>
-                    <td><img class="trustee" src="./img/trustees/5-Rengarajan.JPG" alt="trustee"></td>
-                  </tr>
-                  <tr>
-                    <td>C.Anand Kuamar</td>
-                    <td>Trustee / Secretry</td>
-                    <td><img class="trustee" src="./img/trustees/7-C_AnanthaKumar.jpg" alt="trustee"></td>
-                  </tr>
-                  <tr>
-                    <td>PS Ramachandran</td>
-                    <td>Trustee / Treasurer</td>
-                    <td><img class="trustee" src="./img/trustees/10-P.S.Ramachandaran.JPG" alt="trustee"></td>
-                  </tr>
-                  <tr>
-                    <td>Lakshmanan T</td>
-                    <td>Trustee /Co-ordinator</td>
-                    <td><img class="trustee" src="./img/trustees/2-Lakshmanan.jpeg" alt="trustee"></td>
-                  </tr>
-                  <tr>
-                    <td>Syed Ibrahim</td>
-                    <td>Trustee</td>
-                    <td><img class="trustee" src="./img/trustees/1-SyedIbrahim.JPG" alt="trustee"></td>
-                  </tr>
-                  <tr>
-                    <td>R.AnathKrishnan</td>
-                    <td>Trustee</td>
-                    <td><img class="trustee" src="./img/trustees/11-R.AnathKrishnan.JPG" alt="trustee"></td>
-                  </tr>
-                  <tr>
-                    <td>T.C.Alagar Raja</td>
-                    <td>Trustee</td>
-                    <td><img class="trustee" src="./img/trustees/8-T.C.Alagar Raja.jpg" alt="trustee"></td>
-                  </tr>
-                  <tr>
-                    <td>N.Ramesh</td>
-                    <td>Trustee</td>
-                    <td><img class="trustee" src="./img/trustees/9-N.Ramesh.jpg" alt="trustee"></td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="trustees-grid">
+              <div class="trustee-card">
+                <div class="trustee-image-wrapper">
+                  <img src="./img/trustees/5-Rengarajan.JPG" alt="B.Rangarajan">
+                </div>
+                <div class="trustee-info">
+                  <div class="trustee-name">B. Rangarajan</div>
+                  <div class="trustee-designation">Trustee / Managing Trustee</div>
+                </div>
+              </div>
+
+              <div class="trustee-card">
+                <div class="trustee-image-wrapper">
+                  <img src="./img/trustees/7-C_AnanthaKumar.jpg" alt="C.Anand Kumar">
+                </div>
+                <div class="trustee-info">
+                  <div class="trustee-name">C. Anand Kumar</div>
+                  <div class="trustee-designation">Trustee / Secretary</div>
+                </div>
+              </div>
+
+              <div class="trustee-card">
+                <div class="trustee-image-wrapper">
+                  <img src="./img/trustees/10-P.S.Ramachandaran.JPG" alt="PS Ramachandran">
+                </div>
+                <div class="trustee-info">
+                  <div class="trustee-name">PS Ramachandran</div>
+                  <div class="trustee-designation">Trustee / Treasurer</div>
+                </div>
+              </div>
+
+              <div class="trustee-card">
+                <div class="trustee-image-wrapper">
+                  <img src="./img/trustees/2-Lakshmanan.jpeg" alt="Lakshmanan T">
+                </div>
+                <div class="trustee-info">
+                  <div class="trustee-name">Lakshmanan T</div>
+                  <div class="trustee-designation">Trustee / Co-ordinator</div>
+                </div>
+              </div>
+
+              <div class="trustee-card">
+                <div class="trustee-image-wrapper">
+                  <img src="./img/trustees/1-SyedIbrahim.JPG" alt="Syed Ibrahim">
+                </div>
+                <div class="trustee-info">
+                  <div class="trustee-name">Syed Ibrahim</div>
+                  <div class="trustee-designation">Trustee</div>
+                </div>
+              </div>
+
+              <div class="trustee-card">
+                <div class="trustee-image-wrapper">
+                  <img src="./img/trustees/11-R.AnathKrishnan.JPG" alt="R.AnathKrishnan">
+                </div>
+                <div class="trustee-info">
+                  <div class="trustee-name">R. AnathKrishnan</div>
+                  <div class="trustee-designation">Trustee</div>
+                </div>
+              </div>
+
+              <div class="trustee-card">
+                <div class="trustee-image-wrapper">
+                  <img src="./img/trustees/8-T.C.Alagar Raja.jpg" alt="T.C.Alagar Raja">
+                </div>
+                <div class="trustee-info">
+                  <div class="trustee-name">T.C. Alagar Raja</div>
+                  <div class="trustee-designation">Trustee</div>
+                </div>
+              </div>
+
+              <div class="trustee-card">
+                <div class="trustee-image-wrapper">
+                  <img src="./img/trustees/9-N.Ramesh.jpg" alt="N.Ramesh">
+                </div>
+                <div class="trustee-info">
+                  <div class="trustee-name">N. Ramesh</div>
+                  <div class="trustee-designation">Trustee</div>
+                </div>
+              </div>
             </div>
             </div>
           </div><!-- End of content -->

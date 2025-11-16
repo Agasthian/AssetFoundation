@@ -30,45 +30,158 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .contact {
-            padding: 2rem;
-            background-color: #f9f9f9;
+            padding: 5rem 0;
+            background-color: #ffffff;
+            min-height: 80vh;
+        }
+
+        .contact .container {
+            max-width: 1200px;
+        }
+
+        #heading {
+            text-align: center;
+            margin-bottom: 4rem;
         }
 
         #heading h3 {
-            font-size: 2rem;
-            text-align: center;
+            font-size: 2.75rem;
+            color: #1a1a1a;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+        }
+
+        #heading p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-wrapper {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 2px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-info-section {
+            padding: 3.5rem 3rem;
+            background-color: #fafafa;
+            border-right: 1px solid #e0e0e0;
+            font-size: x-large;
+        }
+
+        .contact-info-section h4 {
+            font-weight: 600;
             margin-bottom: 2rem;
-            color: #333;
+            color: #1a1a1a;
+            font-size: 1.4rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #1a1a1a;
         }
 
-        address {
-            font-style: normal;
-            line-height: 1.8;
-        }
-
-        .contact-img1 img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-img1 {
+        .contact-detail-row {
+            margin-bottom: 1.8rem;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            border-radius: 10px;
+            align-items: flex-start;
         }
 
-      .contact-img1 .contact-image {
-          width: 100%;
-          max-width: 500px;
-          height: auto; 
-          border-radius: 5px;
-      }
+        .contact-detail-row:last-child {
+            margin-bottom: 0;
+        }
 
-      .contact {
-        margin-top: 5rem !important; }
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #1a1a1a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-right: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-content {
+            flex: 1;
+        }
+
+        .contact-detail-label {
+            font-size: 0.85rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+            font-size: medium;
+        }
+
+        .contact-detail-text {
+            color: #1a1a1a;
+            font-size: large;
+            line-height: 1.6;
+        }
+
+        .contact-detail-text a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px solid #1a1a1a;
+            transition: all 0.3s ease;
+        }
+
+        .contact-detail-text a:hover {
+            color: #555;
+            border-bottom-color: #555;
+        }
+
+        .organization-name {
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-img-section {
+            padding: 3.5rem 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+        }
+
+        .contact-image-wrapper {
+            width: 100%;
+            max-width: 420px;
+            position: relative;
+        }
+
+        .contact-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: grayscale(0%);
+            transition: filter 0.3s ease;
+        }
+
+        .contact-image-wrapper:hover img {
+            filter: grayscale(0%);
+        }
+
+        .contact {
+            margin-top: 5rem !important;
+        }
+
+        @media (max-width: 991px) {
+            .contact-info-section {
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+            }
+        }
 
         @media (max-width: 768px) {
             .header {
@@ -81,8 +194,17 @@
                 gap: 0.5rem;
             }
 
-            .contact .row {
-                flex-direction: column;
+            .contact {
+                padding: 3rem 0;
+            }
+
+            #heading h3 {
+                font-size: 2.2rem;
+            }
+
+            .contact-info-section,
+            .contact-img-section {
+                padding: 2.5rem 2rem;
             }
 
             .footer_class {
@@ -100,11 +222,28 @@
             }
 
             #heading h3 {
-                font-size: 1.5rem;
+                font-size: 1.85rem;
+            }
+
+            #heading p {
+                font-size: 1rem;
+            }
+
+            .contact-info-section,
+            .contact-img-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .contact-detail-row {
+                margin-bottom: 1.5rem;
+            }
+
+            .contact-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
             }
         }
-
-
     </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -141,26 +280,62 @@
     <div class="contact">
         <div class="container">
             <div id="heading">
-                <h3 style="margin-bottom: 2em;margin-top: 0;">Contact Us</h3>
+                <h3 style="font-size: xx-large !important;">Contact Us</h3>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4 style="font-weight: bold; margin-bottom: 1em;">Registered Office and Mailing Address:</h4>
-                    <address style="margin-bottom: 2em;">
-                        A.S.S.E.T Foundation<br>
-                        6/17, Trust Square Street, <br>
-                        Ramalingapuram,<br>
-                        Chennai – 600012, India.<br>
-                        <abbr title="Phone">Ph:</abbr> (044)2645-4939<br>
-                        <abbr title="Phone">Mobile:</abbr> +91-9884256088<br>
-                        Email: <a href="mailto:assetfoundation2015@gmail.com">assetfoundation2015@gmail.com</a>
-                    </address>
+            <div class="contact-wrapper">
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <div class="contact-info-section">
+                            <h4>Get In Touch</h4>
+                            
+                            <div class="contact-detail-row">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-detail-content">
+                                    <div class="contact-detail-label">Address</div>
+                                    <div class="contact-detail-text">
+                                        <div class="organization-name">A.S.S.E.T Foundation</div>
+                                        6/17, Trust Square Street,<br>
+                                        Ramalingapuram,<br>
+                                        Chennai - 600012, India
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-row">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-detail-content">
+                                    <div class="contact-detail-label">Phone</div>
+                                    <div class="contact-detail-text">(044) 2645-4939</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-row">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-detail-content">
+                                    <div class="contact-detail-label">Mobile</div>
+                                    <div class="contact-detail-text">+91-9884256088</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-row">
+                                <div class="contact-icon">✉️</div>
+                                <div class="contact-detail-content">
+                                    <div class="contact-detail-label">Email</div>
+                                    <div class="contact-detail-text">
+                                        <a href="mailto:assetfoundation2015@gmail.com">assetfoundation2015@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-img-section">
+                            <div class="contact-image-wrapper">
+                                <img src="./img/contactus.png" alt="Contact Us - ASSET Foundation">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="contact-img1 img-responsive">
-                      <img src="./img/contactus.png" alt="Contact Us" class="contact-image">
-                  </div>
-              </div>
             </div>
         </div>
     </div>
@@ -173,7 +348,7 @@
               <h3>A.S.S.E.T Foundation</h3>
                 6/17, Trust Street Square, <br>
                 Ramalingapuram,<br>
-                Chennai – 600012, India.<br>
+                Chennai - 600012, India.<br>
                 <abbr title="Phone">Ph:</abbr> (044)2645-4939. <br>
                 <abbr title="Phone">Mobile:</abbr> +91-9884256088.<br>
               E-Mail :<a style="color:#FFEB3B;margin-left: 0%;" href="mailto:assetfoundation2015@gmail.com"> assetfoundation2015@gmail.com</a>			  
