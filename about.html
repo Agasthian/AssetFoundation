@@ -167,19 +167,6 @@
         font-weight: bold;
       }
 
-      .about-us-video {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 3em 0;
-      }
-
-      .about-us-video iframe {
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        max-width: 100%;
-      }
-
       .video-container {
         display: flex;
         justify-content: center;
@@ -204,6 +191,22 @@
 
       .content img:hover {
         transform: scale(1.05);
+      }
+
+      .about-us-video {
+          width: 100%;
+          display: block;
+          text-align: center;
+          margin: 2em auto !important;
+          padding: 0;
+      }
+
+      .about-us-video iframe {
+          display: block;
+          margin: 0 auto !important;
+          max-width: 100%;
+          width: 640px;
+          height: 360px;
       }
 
       @media screen and (max-width: 1000px) {
@@ -382,9 +385,14 @@
         <br>
         
         <h4 style="font-size: x-large !important;">Our success story in 2016:</h4>
-        <div class="video-container">
+        <!-- <div class="video-container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/pEnEbYex0Ig?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div> -->
+
+        <div class="about-us-video">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/OVF4udmgVt4?rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
+
         <p>As soon as the trust was registered, a desire was expressed by all that it should start funding the educational needs of under privileged, meritorious, but monetarily challenged school finalists so that they could continue with their higher education. Accordingly, three students were chosen who met with the rigorous selection criteria set forth by the selection committee for awarding the scholarship. The Trustees are glad to report that A.S.S.E.T Foundation has been able to do it within three months of forming the trust, thanks to the generous contribution of the  well-wishers.</p>			
         <h4 style="font-size: x-large !important;">The Road ahead:</h4>
         <p>The Trustees are cognizant that:</p>
