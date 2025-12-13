@@ -409,26 +409,6 @@
     <div class="tab-content" id="tab-contents"></div>
   </div>
 
-  <div class="container">
-    <div class="legend-box">
-      <h4 style="font-size: medium !important;">Legend</h4>
-      <div class="legend-box-content">
-        <div class="legend-item">
-          <span style="background-color:#008000;"></span>
-          <p>Green - Completed Project</p>
-        </div>
-        <div class="legend-item">
-          <span style="background-color:#FFA500"></span>
-          <p>Orange - In Progress Project</p>
-        </div>
-        <div class="legend-item">
-          <span style="background-color:#FF0000"></span>
-          <p>Red - Discontinued Project</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="container">		
     <div id="student-description">
       <p class="contents">For A.S.S.E.T Foundation, every student we sponsor in a year is a project initiated during that year. This is because, the course that the student is being sponsored may extend beyond the current fiscal year. Thus an Engineering Course that is to run for 4 years for A.S.S.E.T Foundation is a project that will run for 4 years. A Medical course that runs for 5 years, will for A.S.S.E.T Foundation a project that will run for 5 years</p>
@@ -507,7 +487,7 @@
     function createTabs(years) {
       const tabButtons = years
         .map((year, index) => `
-          <button class="tablinks" onclick="openYear(event, '${year}')" ${index === 0 ? 'id="defaultOpen"' : ''}>
+          <button class="tablinks" onclick="openYear(event, '${year}')" ${index === 0 ? 'id="defaultOpen"' : ''}  style="margin: 0.4em;">
             ${year}
           </button>
         `)
@@ -530,7 +510,11 @@
             <div class="our-work">
               <div class="container">
                 <div class="student-info">
-                  <h2 style="margin-top: 1em; font-size: medium !important;">Beneficiaries of ${year}</h2>
+                <div style="padding-top: 10px;">
+                    <h2 style="margin-top: 10px; font-size: medium !important;">
+                        Beneficiaries of ${year}
+                    </h2>
+                </div>
                   <div class="row" id="students-${year}"></div>
                 </div>
               </div>
@@ -564,9 +548,6 @@
               <div class="student-card-wrapper">
                 <div class="student-profile">
                   <div class="profile-box">
-                    <div class="student-img" style="border: 3px solid ${borderColor};">
-                      <img src="${student.image}" alt="${student.name}" class="profile-image">
-                    </div>
                     <div class="student-name">
                       <h4 style="font-size: medium !important;">${student.name}</h4>
                       <h5 style="font-size: small !important;">${student.course}</h5>
