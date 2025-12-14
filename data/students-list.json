@@ -3,7 +3,7 @@
     [
         {
             "name": "Iswarya",
-            "course": "B.E.(CSC)",
+            "course": "B.E.(CSE)",
             "college": "Velammal Engineering College",
             "projectStatus": "Completed"
         },
@@ -24,13 +24,13 @@
     "students2017": [
         {
             "name": "PonKumar",
-            "course": "B.E.(CSC)",
+            "course": "B.E.(CSE)",
             "college": "Goverment College of Engineering",
             "projectStatus": "Completed"
         },
         {
             "name": "Sangeeta",
-            "course": "B.E. CSC",
+            "course": "B.E. CSE",
             "college": "Velammal Institute of Technology",
             "projectStatus": "Completed"
         },
@@ -68,7 +68,7 @@
     "students2018": [
         {
             "name": "Balaji",
-            "course": "B.E.(CSC)",
+            "course": "B.E.(CSE)",
             "college": "SSN College of Engineering",
             "projectStatus": "Completed"
         },
