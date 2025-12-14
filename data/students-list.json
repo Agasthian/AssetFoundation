@@ -643,6 +643,12 @@
             "course": "B.Sc Statistics",
             "college": "D.G Vaishnav College",
             "projectStatus": "In Progress"
+        },
+        {
+            "name": "Dheeksha B",
+            "course": "B.E. (CSE)",
+            "college": "Kings Engineering College",
+            "projectStatus": "In Progress"
         }
     ],
     "students2024": [
