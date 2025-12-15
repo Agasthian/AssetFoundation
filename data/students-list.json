@@ -649,6 +649,12 @@
             "course": "B.E. (CSE)",
             "college": "Kings Engineering College",
             "projectStatus": "In Progress"
+        },
+        {
+            "name": "Pranav S",
+            "course": "B.E. Artificial Intelligence and Data Science",
+            "college": "SASTRA DEEMED UNIVERSITY",
+            "projectStatus": "In Progress"
         }
     ],
     "students2024": [
